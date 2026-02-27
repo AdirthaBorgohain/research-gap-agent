@@ -1,0 +1,75 @@
+# =============================================================================
+# Research Gap Agent — config.yaml
+# =============================================================================
+# All settings below are required unless marked optional. Do not put API keys
+# or secrets here; use .env only. Override path with --config / -c or CONFIG_PATH.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# llm — Language model used for query planning, paper scoring, clustering,
+#       deep analysis, gap finding, hypothesis generation, and report writing.
+# -----------------------------------------------------------------------------
+llm:
+  # provider: Which API to call. Must be "openai" or "anthropic".
+  provider: openai
+
+  # model: Provider-specific model name (e.g. gpt-5.2 for OpenAI, claude-sonnet-4-6 for Anthropic).
+  #        Used for all LLM steps in the pipeline.
+  model: gpt-5.2
+
+  # temperature: Sampling randomness for most steps (0.0 = deterministic, 2.0 = very random).
+  #              Lower values give more consistent, factual outputs; used for planning and analysis.
+  temperature: 0.2
+
+  # hypothesis_temperature: Sampling randomness only for hypothesis generation. Kept higher than
+  #                         "temperature" so the model suggests more varied, creative hypotheses
+  #                         per research gap. Same scale 0.0–2.0.
+  hypothesis_temperature: 0.5
+
+# -----------------------------------------------------------------------------
+# literature_apis — Which paper search backends to query. At least one required.
+#                   Each name must be one of: semantic_scholar, openalex, arxiv.
+#                   Results are merged and deduplicated before analysis.
+# -----------------------------------------------------------------------------
+literature_apis:
+  - openalex
+  - arxiv
+  # - semantic_scholar
+
+# -----------------------------------------------------------------------------
+# relevance_threshold — LLM relevance score 0–1; papers below this are dropped.
+#                        Used for all depths. Higher = stricter filtering.
+# -----------------------------------------------------------------------------
+relevance_threshold: 0.7
+
+# -----------------------------------------------------------------------------
+# depth_presets — Defines three search "depths": quick, standard, deep. The LLM
+#                picks one per run based on the user query; --depth overrides for
+#                the initial state. All three presets must be defined. Each preset
+#                controls paper limits, search iterations, and cluster range.
+#                Relevance filtering uses the single relevance_threshold above.
+# -----------------------------------------------------------------------------
+depth_presets:
+  # quick: Fewer papers, one search round, fewer clusters. Use for fast exploration.
+  quick:
+    min_papers: 15
+    max_papers: 30
+    max_search_iterations: 1
+    min_clusters: 2
+    max_clusters: 4
+
+  # standard: Moderate paper count and up to two search rounds. Default for most runs.
+  standard:
+    min_papers: 30
+    max_papers: 80
+    max_search_iterations: 2
+    min_clusters: 3
+    max_clusters: 7
+
+  # deep: Most papers and up to three search rounds, more clusters. Thorough literature coverage.
+  deep:
+    min_papers: 50
+    max_papers: 200
+    max_search_iterations: 3
+    min_clusters: 5
+    max_clusters: 10

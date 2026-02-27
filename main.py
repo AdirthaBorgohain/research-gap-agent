@@ -1,6 +1,8 @@
-def main():
-    print("Hello from research-gap-agent!")
+"""Entry point for running the Research Gap Finding Agent CLI."""
 
+import sys
+
+from research_gap_agent.cli import main
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
