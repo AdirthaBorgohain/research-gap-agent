@@ -47,17 +47,11 @@ The pipeline has three phases: **Search**, **Analysis**, and **Synthesis**. A si
 
 ### Flow diagram
 
-The diagram below matches the graph defined in `src/research_gap_agent/graph/builder.py`.
-
 ![Agent flow](./agent_graph.png)
 
 ### Citations and references flow
 
-The **citation list** is the ordered list `filtered_papers`; citation key `[k]` corresponds to the k-th paper (1-based). This list is not stored in state—it is derived in **gap_finder** and **report_writer** from `state["filtered_papers"]`.
-
-In **gap_finder**, the list is passed into the prompt so the LLM can only output `supporting_paper_indices` in 1..N; we then validate and clamp those indices. In **report_writer**, the same list is passed as “allowed references”, along with **findings with citation keys** (from `cluster_analyses` via `utils/citations.findings_citations_section`) and per-gap citation hints. The LLM is asked to cite only [1]..[N] and to attribute specific findings to the papers listed for each finding.
-
-Section 5 (Key References) is generated from `filtered_papers` (via `utils/citations.references_section_md`) and injected into the report; a post-pass strips any [n] with n outside 1..N. End-to-end, every reference is traceable to the corpus.
+Citations use `filtered_papers`: `[k]` = k-th paper (1-based). **gap_finder** outputs `supporting_paper_indices` in 1..N (validated); **report_writer** gets the list plus findings with citation keys and per-gap hints, cites only [1]..[N]. Section 5 (Key References) is built from `filtered_papers`; a post-pass strips invalid [n]. All references trace to the corpus.
 
 ---
 
@@ -66,7 +60,7 @@ Section 5 (Key References) is generated from `filtered_papers` (via `utils/citat
 | Area | Decision |
 |------|----------|
 | **LangGraph + single state** | One `AgentState` TypedDict with `Annotated[list, operator.add]` for `search_results` and `cluster_analyses` lets parallel nodes append without overwriting. The graph stays acyclic except for the explicit coverage loop. |
-| **Sync HTTP in graph nodes** | The graph is invoked synchronously from the CLI. Async clients inside sync nodes caused “bound to a different event loop” errors. Literature API clients expose sync entry points (`search_sync`, `_request_sync`); async paths remain for possible future async invocation. |
+| **Sync HTTP in graph nodes** | The graph is invoked synchronously from the CLI. Literature API clients use sync entry points (`search_sync`, `_request_sync`) only. |
 | **Three literature APIs** | Semantic Scholar, OpenAlex, and arXiv are free and cover different indexes. Each client normalizes to a shared `Paper` model so downstream nodes are API-agnostic. Failures in one API return `[]` so others still contribute. |
 | **Deduplication** | DOI first, then normalized title + `SequenceMatcher` ratio ≥ 0.9. Logic lives in `utils/dedup.py`. |
 | **Relevance scoring** | Papers are scored in batches (e.g. 20) with one LLM call per batch to stay within context and token limits. |
@@ -92,12 +86,14 @@ Section 5 (Key References) is generated from `filtered_papers` (via `utils/citat
 
 ## Future improvements
 
+- **Async implementations**: Add async literature API clients and invoke the graph with `astream`/`ainvoke` for parallel HTTP calls and faster search.
 - **Checkpointing / run state memory**: Persist graph state (e.g. with LangGraph's `MemorySaver` or `SqliteSaver`) so runs can be resumed or inspected; optional `checkpoint_path` in config and `--checkpoint` CLI flag.
 - **Human-in-the-loop**: Use LangGraph `interrupt()` after query planning and/or paper filtering; allow editing queries or thresholds before continuing.
 - **Caching**: Cache literature API responses (e.g. by query + API) with TTL for development or repeated runs.
 - **PubMed (and others)**: Add another client and plug it into the same fan-out and `Paper` normalization.
 - **Embedding-based clustering**: Optionally cluster by embeddings instead of or in addition to LLM-based clustering for speed and cost.
 - **Streaming report**: Stream the final report token-by-token or section-by-section.
+- **Multi-prompt report generation**: Instead of generating the full report in a single LLM call, split it into multiple prompts with distinct objectives (e.g. per-section or per-gap) to allow longer context and potentially more insightful, higher-quality sections that are later stitched together.
 - **Stricter typing**: Replace remaining `list`/`dict` in state with concrete types (e.g. `list[ResearchGap]`) where it improves clarity.
 - **Tests**: Unit tests for dedup, normalization, citation helpers, state reducers; integration tests with mocked LLM and API responses.
 - **BibTeX / reference export**: Export the reference list as BibTeX or another standard format.

@@ -58,33 +58,6 @@ class OpenAlexClient(BaseAPIClient):
             logger.exception("OpenAlex search failed: %s", e)
             return []
 
-    async def search(
-        self,
-        query: str,
-        per_page: int = 200,
-        page: int = 1,
-    ) -> list[Paper]:
-        """Search works; returns normalized Paper list. Returns [] on failure."""
-        try:
-            params = {
-                "search": query,
-                "per-page": min(per_page, 200),
-                "page": page,
-            }
-            url = f"{BASE_URL}{WORKS_PATH}?{urlencode(params)}"
-            result = await self._request(
-                "GET",
-                url,
-                headers=self._headers,
-            )
-            if not isinstance(result, dict):
-                return []
-            results = result.get("results") or []
-            return [self._to_paper(item) for item in results]
-        except Exception as e:
-            logger.exception("OpenAlex search failed: %s", e)
-            return []
-
     @staticmethod
     def _to_paper(item: dict) -> Paper:
         authors = []

@@ -57,34 +57,6 @@ class SemanticScholarClient(BaseAPIClient):
             logger.exception("Semantic Scholar search failed: %s", e)
             return []
 
-    async def search(
-        self,
-        query: str,
-        limit: int = 100,
-        offset: int = 0,
-    ) -> list[Paper]:
-        """Search papers; returns normalized Paper list. Returns [] on failure."""
-        try:
-            params = {
-                "query": query,
-                "limit": min(limit, 100),
-                "offset": offset,
-                "fields": FIELDS,
-            }
-            url = f"{BASE_URL}/paper/search?{urlencode(params)}"
-            result = await self._request(
-                "GET",
-                url,
-                headers=self._headers,
-            )
-            if not isinstance(result, dict):
-                return []
-            data = result.get("data") or []
-            return [self._to_paper(item) for item in data]
-        except Exception as e:
-            logger.exception("Semantic Scholar search failed: %s", e)
-            return []
-
     @staticmethod
     def _to_paper(item: dict) -> Paper:
         authors = []

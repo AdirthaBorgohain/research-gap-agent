@@ -1,6 +1,5 @@
 """arXiv API client (Atom XML)."""
 
-import asyncio
 import logging
 import re
 import sys
@@ -65,41 +64,6 @@ class ArxivClient(BaseAPIClient):
 
     def _get_sync_client(self) -> httpx.Client:
         return httpx.Client(timeout=self._timeout, follow_redirects=True)
-
-    async def search(
-        self,
-        query: str,
-        start: int = 0,
-        max_results: int = 100,
-    ) -> list[Paper]:
-        """Search arXiv; returns normalized Paper list. Returns [] on failure."""
-        try:
-            import xml.etree.ElementTree as ET
-        except ImportError:
-            logger.error("xml.etree not available")
-            return []
-        try:
-            params = {
-                "search_query": query,
-                "start": start,
-                "max_results": min(max_results, 200),
-            }
-            url = f"{BASE_URL}?{urlencode(params)}"
-            client = await self._get_client()
-            async with self._semaphore:
-                await asyncio.sleep(self._rate_limit_delay)
-            response = await client.get(url)
-            response.raise_for_status()
-            root = ET.fromstring(response.text)
-            papers = []
-            for entry in root.findall(f".//{ATOM_NS}entry"):
-                p = self._entry_to_paper(entry, ATOM_NS, ARXIV_NS)
-                if p:
-                    papers.append(p)
-            return papers
-        except Exception as e:
-            logger.exception("arXiv search failed: %s", e)
-            return []
 
     @staticmethod
     def _entry_to_paper(entry, atom_ns: str, arxiv_ns: str) -> Paper | None:

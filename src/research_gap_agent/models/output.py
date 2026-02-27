@@ -17,12 +17,18 @@ class QueryPlan(BaseModel):
 class GapType(str, Enum):
     """Type of research gap."""
 
-    TOPIC = "topic"
-    METHODOLOGICAL = "methodological"
-    SCOPE = "scope"
-    TEMPORAL = "temporal"
-    CONTRADICTION = "contradiction"
-    INTEGRATION = "integration"
+    TOPIC = "topic"  # Core questions, concepts, or subtopics that remain unexplored or underexplored
+    METHODOLOGICAL = (
+        "methodological"  # Limitations or missing methods, measures, or study designs
+    )
+    SCOPE = "scope"  # Gaps in populations, contexts, or settings that have not been adequately covered
+    TEMPORAL = (
+        "temporal"  # Outdated evidence or lack of longitudinal/recent work over time
+    )
+    CONTRADICTION = "contradiction"  # Conflicting findings, theories, or interpretations in the literature
+    INTEGRATION = (
+        "integration"  # Missing synthesis across fields, methods, or levels of analysis
+    )
 
 
 class ResearchGap(BaseModel):
@@ -31,7 +37,9 @@ class ResearchGap(BaseModel):
     title: str = Field(description="Short title for the gap")
     description: str = Field(description="Detailed description")
     gap_type: GapType = Field(description="Type of gap")
-    evidence: list[str] = Field(default_factory=list, description="Supporting quotes or references")
+    evidence: list[str] = Field(
+        default_factory=list, description="Supporting quotes or references"
+    )
     supporting_paper_indices: list[int] = Field(
         default_factory=list,
         description="1-based indices into the canonical paper list (filtered_papers)",
@@ -43,10 +51,10 @@ class Hypothesis(BaseModel):
 
     title: str = Field(description="Short hypothesis title")
     description: str = Field(description="Detailed description")
-    related_gap_title: str = Field(description="Title of the ResearchGap this addresses")
-    suggested_methodology: str = Field(
-        description="Suggested methodology or approach"
+    related_gap_title: str = Field(
+        description="Title of the ResearchGap this addresses"
     )
+    suggested_methodology: str = Field(description="Suggested methodology or approach")
 
 
 class TopicCluster(BaseModel):
@@ -69,13 +77,17 @@ class ClusteringOutput(BaseModel):
 class ResearchGapList(BaseModel):
     """Wrapper for structured output of multiple research gaps."""
 
-    gaps: list[ResearchGap] = Field(default_factory=list, description="List of research gaps")
+    gaps: list[ResearchGap] = Field(
+        default_factory=list, description="List of research gaps"
+    )
 
 
 class HypothesisList(BaseModel):
     """Wrapper for structured output of multiple hypotheses."""
 
-    hypotheses: list[Hypothesis] = Field(default_factory=list, description="List of hypotheses")
+    hypotheses: list[Hypothesis] = Field(
+        default_factory=list, description="List of hypotheses"
+    )
 
 
 class CitedFinding(BaseModel):
