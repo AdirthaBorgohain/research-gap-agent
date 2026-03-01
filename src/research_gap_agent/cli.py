@@ -1,6 +1,7 @@
 """CLI for the Research Gap Finding Agent."""
 
 import argparse
+import json
 import logging
 import os
 import re
@@ -59,6 +60,11 @@ def parse_args() -> argparse.Namespace:
         default=os.environ.get("CONFIG_PATH", "config.yaml"),
         help="Path to config.yaml (default: config.yaml or CONFIG_PATH env)",
     )
+    parser.add_argument(
+        "--no-json",
+        action="store_true",
+        help="Do not write the JSON output file (default: JSON is written)",
+    )
     return parser.parse_args()
 
 
@@ -80,6 +86,47 @@ def _paths_for_run(query: str, depth: str = "standard") -> tuple[Path, Path]:
     report_path = Path("outputs") / f"{depth}_report_{slug}_{timestamp}.md"
     log_path = Path("logs") / f"run_{slug}_{timestamp}.log"
     return report_path, log_path
+
+
+def _dump_list_for_json(items: list[Any], /) -> list[Any]:
+    """Serialize a list of Pydantic models or plain values to JSON-safe structures."""
+    out: list[Any] = []
+    for item in items:
+        if hasattr(item, "model_dump"):
+            out.append(item.model_dump(mode="json"))
+        else:
+            out.append(item)
+    return out
+
+
+def _build_report_export(state: dict[str, Any], report_path: Path) -> dict[str, Any]:
+    """Build a JSON-serializable export dict from final agent state."""
+    papers = state.get("filtered_papers") or []
+    gaps = state.get("research_gaps") or []
+    hypotheses = state.get("hypotheses") or []
+    clusters = state.get("topic_clusters") or []
+    analyses = state.get("cluster_analyses") or []
+    refined = state.get("refined_queries") or []
+    return {
+        "meta": {
+            "query": state.get("query") or "",
+            "depth": state.get("depth") or "standard",
+            "timestamp": datetime.now().isoformat(),
+            "report_path": str(report_path) if report_path else "",
+        },
+        "papers": _dump_list_for_json(papers) if isinstance(papers, list) else [],
+        "research_gaps": _dump_list_for_json(gaps) if isinstance(gaps, list) else [],
+        "hypotheses": _dump_list_for_json(hypotheses)
+        if isinstance(hypotheses, list)
+        else [],
+        "topic_clusters": (
+            _dump_list_for_json(clusters) if isinstance(clusters, list) else []
+        ),
+        "cluster_analyses": (
+            _dump_list_for_json(analyses) if isinstance(analyses, list) else []
+        ),
+        "refined_queries": refined if isinstance(refined, list) else [],
+    }
 
 
 def _print_config_banner(
@@ -280,6 +327,16 @@ def main() -> int:
     out_path.write_text(text, encoding="utf-8")
     logger.info("Report written to %s", out_path)
     print("\nReport saved to:", out_path, flush=True)
+
+    if not args.no_json:
+        json_path = out_path.with_suffix(".json")
+        export_data = _build_report_export(state=final_state, report_path=out_path)
+        json_path.write_text(
+            json.dumps(export_data, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+        logger.info("JSON written to %s", json_path)
+        print("JSON saved to:", json_path, flush=True)
 
     for g in gaps[:15] if gaps else []:
         title = getattr(g, "title", str(g))

@@ -195,6 +195,7 @@ uv run python main.py "single-cell RNA sequencing" --depth deep
 | `--depth` | `-d` | `quick` \| `standard` \| `deep` (default: `standard`) |
 | `--provider` | `-p` | `openai` \| `anthropic` (default: from `config.yaml`) |
 | `--config` | `-c` | Path to config file (default: `config.yaml` or `CONFIG_PATH`) |
+| `--no-json` | — | Do not write the JSON output file (default: JSON is written) |
 
 **Depth presets (in `config.yaml`)**
 
@@ -202,7 +203,12 @@ Each depth preset defines paper limits (`min_papers`, `max_papers`), search iter
 
 ### 5. Output
 
-Reports are written as markdown to `outputs/`. Each run creates `outputs/report_<query_slug>_<timestamp>.md`. The CLI prints a short summary table of research gaps.
+Each run writes two files to `outputs/` by default:
+
+- **Markdown report:** `outputs/<depth>_report_<query_slug>_<timestamp>.md` (e.g. `standard_report_long_term_memory_20260226_232453.md`).
+- **Structured JSON:** `outputs/<depth>_report_<query_slug>_<timestamp>.json` — same base name with `.json` extension. The JSON contains `meta` (query, depth, timestamp, report_path), `report_markdown`, `papers`, `research_gaps`, `hypotheses`, `topic_clusters`, `cluster_analyses`, and `refined_queries`, so a frontend or UI can parse it without scraping markdown. Citation `[k]` in the report refers to the k-th item in `papers` (1-based).
+
+Use `--no-json` to skip writing the JSON file. The CLI also prints a short summary of research gaps to the console.
 
 ---
 

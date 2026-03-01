@@ -1,0 +1,1204 @@
+{
+  "meta": {
+    "query": "long term memory in AI Agents",
+    "depth": "standard",
+    "timestamp": "2026-03-01T11:08:43.348683",
+    "report_path": "outputs/standard_report_long_term_memory_in_ai_agents_20260301_105922.md"
+  },
+  "papers": [
+    {
+      "id": "2502.06975v1",
+      "title": "Position: Episodic Memory is the Missing Piece for Long-Term LLM Agents",
+      "abstract": "As Large Language Models (LLMs) evolve from text-completion tools into fully fledged agents operating in dynamic environments, they must address the challenge of continually learning and retaining long-term knowledge. Many biological systems solve these challenges with episodic memory, which supports single-shot learning of instance-specific contexts. Inspired by this, we present an episodic memory framework for LLM agents, centered around five key properties of episodic memory that underlie adaptive and context-sensitive behavior. With various research efforts already partially covering these properties, this position paper argues that now is the right time for an explicit, integrated focus on episodic memory to catalyze the development of long-term agents. To this end, we outline a roadmap that unites several research directions under the goal to support all five properties of episodic memory for more efficient long-term LLM agents.",
+      "authors": [
+        "Mathis Pink",
+        "Qinyuan Wu",
+        "Vy Ai Vo",
+        "Javier Turek",
+        "Jianing Mu",
+        "Alexander Huth",
+        "Mariya Toneva"
+      ],
+      "year": 2025,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2502.06975v1",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.98
+    },
+    {
+      "id": "https://openalex.org/W4387835442",
+      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+      "abstract": "Believable proxies of human behavior can empower interactive applications ranging from immersive environments to rehearsal spaces for interpersonal communication to prototyping tools. In this paper, we introduce generative agents: computational software agents that simulate believable human behavior. Generative agents wake up, cook breakfast, and head to work; artists paint, while authors write; they form opinions, notice each other, and initiate conversations; they remember and reflect on days past as they plan the next day. To enable generative agents, we describe an architecture that extends a large language model to store a complete record of the agent’s experiences using natural language, synthesize those memories over time into higher-level reflections, and retrieve them dynamically to plan behavior. We instantiate generative agents to populate an interactive sandbox environment inspired by The Sims, where end users can interact with a small town of twenty-five agents using natural language. In an evaluation, these generative agents produce believable individual and emergent social behaviors. For example, starting with only a single user-specified notion that one agent wants to throw a Valentine’s Day party, the agents autonomously spread invitations to the party over the next two days, make new acquaintances, ask each other out on dates to the party, and coordinate to show up for the party together at the right time. We demonstrate through ablation that the components of our agent architecture—observation, planning, and reflection—each contribute critically to the believability of agent behavior. By fusing large language models with computational interactive agents, this work introduces architectural and interaction patterns for enabling believable simulations of human behavior.",
+      "authors": [
+        "Joon Sung Park",
+        "Joseph O’Brien",
+        "Carrie J. Cai",
+        "Meredith Ringel Morris",
+        "Percy Liang",
+        "Michael S. Bernstein"
+      ],
+      "year": 2023,
+      "citation_count": 1137,
+      "venue": null,
+      "url": "https://doi.org/10.1145/3586183.3606763",
+      "doi": "https://doi.org/10.1145/3586183.3606763",
+      "source": "openalex",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "2409.14908v2",
+      "title": "KARMA: Augmenting Embodied AI Agents with Long-and-short Term Memory Systems",
+      "abstract": "Embodied AI agents responsible for executing interconnected, long-sequence household tasks often face difficulties with in-context memory, leading to inefficiencies and errors in task execution. To address this issue, we introduce KARMA, an innovative memory system that integrates long-term and short-term memory modules, enhancing large language models (LLMs) for planning in embodied agents through memory-augmented prompting. KARMA distinguishes between long-term and short-term memory, with long-term memory capturing comprehensive 3D scene graphs as representations of the environment, while short-term memory dynamically records changes in objects' positions and states. This dual-memory structure allows agents to retrieve relevant past scene experiences, thereby improving the accuracy and efficiency of task planning. Short-term memory employs strategies for effective and adaptive memory replacement, ensuring the retention of critical information while discarding less pertinent data. Compared to state-of-the-art embodied agents enhanced with memory, our memory-augmented embodied AI agent improves success rates by 1.3x and 2.3x in Composite Tasks and Complex Tasks within the AI2-THOR simulator, respectively, and enhances task execution efficiency by 3.4x and 62.7x. Furthermore, we demonstrate that KARMA's plug-and-play capability allows for seamless deployment on real-world robotic systems, such as mobile manipulation platforms.Through this plug-and-play memory system, KARMA significantly enhances the ability of embodied agents to generate coherent and contextually appropriate plans, making the execution of complex household tasks more efficient. The experimental videos from the work can be found at https://youtu.be/4BT7fnw9ehs. Our code is available at https://github.com/WZX0Swarm0Robotics/KARMA/tree/master.",
+      "authors": [
+        "Zixuan Wang",
+        "Bo Yu",
+        "Junzhe Zhao",
+        "Wenhao Sun",
+        "Sai Hou",
+        "Shuai Liang",
+        "Xing Hu",
+        "Yinhe Han",
+        "Yiming Gan"
+      ],
+      "year": 2024,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2409.14908v2",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "2411.00489v2",
+      "title": "Human-inspired Perspectives: A Survey on AI Long-term Memory",
+      "abstract": "With the rapid advancement of AI systems, their abilities to store, retrieve, and utilize information over the long term - referred to as long-term memory - have become increasingly significant. These capabilities are crucial for enhancing the performance of AI systems across a wide range of tasks. However, there is currently no comprehensive survey that systematically investigates AI's long-term memory capabilities, formulates a theoretical framework, and inspires the development of next-generation AI long-term memory systems. This paper begins by introducing the mechanisms of human long-term memory, then explores AI long-term memory mechanisms, establishing a mapping between the two. Based on the mapping relationships identified, we extend the current cognitive architectures and propose the Cognitive Architecture of Self-Adaptive Long-term Memory (SALM). SALM provides a theoretical framework for the practice of AI long-term memory and holds potential for guiding the creation of next-generation long-term memory driven AI systems. Finally, we delve into the future directions and application prospects of AI long-term memory.",
+      "authors": [
+        "Zihong He",
+        "Weizhe Lin",
+        "Hao Zheng",
+        "Fan Zhang",
+        "Matt W. Jones",
+        "Laurence Aitchison",
+        "Xuhai Xu",
+        "Miao Liu",
+        "Per Ola Kristensson",
+        "Junxiao Shen"
+      ],
+      "year": 2024,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2411.00489v2",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "1d9c21a0fdb1cc16a32c5d490ebaf98436a23382",
+      "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable prowess in generating contextually coherent responses, yet their fixed context windows pose fundamental challenges for maintaining consistency over prolonged multi-session dialogues. We introduce Mem0, a scalable memory-centric architecture that addresses this issue by dynamically extracting, consolidating, and retrieving salient information from ongoing conversations. Building on this foundation, we further propose an enhanced variant that leverages graph-based memory representations to capture complex relational structures among conversational elements. Through comprehensive evaluations on LOCOMO benchmark, we systematically compare our approaches against six baseline categories: (i) established memory-augmented systems, (ii) retrieval-augmented generation (RAG) with varying chunk sizes and k-values, (iii) a full-context approach that processes the entire conversation history, (iv) an open-source memory solution, (v) a proprietary model system, and (vi) a dedicated memory management platform. Empirical results show that our methods consistently outperform all existing memory systems across four question categories: single-hop, temporal, multi-hop, and open-domain. Notably, Mem0 achieves 26% relative improvements in the LLM-as-a-Judge metric over OpenAI, while Mem0 with graph memory achieves around 2% higher overall score than the base configuration. Beyond accuracy gains, we also markedly reduce computational overhead compared to full-context method. In particular, Mem0 attains a 91% lower p95 latency and saves more than 90% token cost, offering a compelling balance between advanced reasoning capabilities and practical deployment constraints. Our findings highlight critical role of structured, persistent memory mechanisms for long-term conversational coherence, paving the way for more reliable and efficient LLM-driven AI agents.",
+      "authors": [
+        "P. Chhikara",
+        "Dev Khant",
+        "Saket Aryan",
+        "Taranjeet Singh",
+        "Deshraj Yadav"
+      ],
+      "year": 2025,
+      "citation_count": 164,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/1d9c21a0fdb1cc16a32c5d490ebaf98436a23382",
+      "doi": "10.48550/arXiv.2504.19413",
+      "source": "semantic_scholar",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "203e595987d27457d43d53bde83ad7845b321fd3",
+      "title": "CAIM: Development and Evaluation of a Cognitive AI Memory Framework for Long-Term Interaction with Intelligent Agents",
+      "abstract": "Large language models (LLMs) have advanced the field of artificial intelligence (AI) and are a powerful enabler for interactive systems. However, they still face challenges in long-term interactions that require adaptation towards the user as well as contextual knowledge and understanding of the ever-changing environment. To overcome these challenges, holistic memory modeling is required to efficiently retrieve and store relevant information across interaction sessions for suitable responses. Cognitive AI, which aims to simulate the human thought process in a computerized model, highlights interesting aspects, such as thoughts, memory mechanisms, and decision-making, that can contribute towards improved memory modeling for LLMs. Inspired by these cognitive AI principles, we propose our memory framework CAIM. CAIM consists of three modules: 1.) The Memory Controller as the central decision unit; 2.) the Memory Retrieval, which filters relevant data for interaction upon request; and 3.) the Post-Thinking, which maintains the memory storage. We compare CAIM against existing approaches, focusing on metrics such as retrieval accuracy, response correctness, contextual coherence, and memory storage. The results demonstrate that CAIM outperforms baseline frameworks across different metrics, highlighting its context-awareness and potential to improve long-term human-AI interactions.",
+      "authors": [
+        "Rebecca Westhäußer",
+        "Frederik Berenz",
+        "Wolfgang Minker",
+        "Sebastian Zepf"
+      ],
+      "year": 2025,
+      "citation_count": 3,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/203e595987d27457d43d53bde83ad7845b321fd3",
+      "doi": "10.48550/arXiv.2505.13044",
+      "source": "semantic_scholar",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "f9e913b5acf30db96b72b7961ebce8d76b73d9bc",
+      "title": "CloneMem: Benchmarking Long-Term Memory for AI Clones",
+      "abstract": "AI Clones aim to simulate an individual's thoughts and behaviors to enable long-term, personalized interaction, placing stringent demands on memory systems to model experiences, emotions, and opinions over time. Existing memory benchmarks primarily rely on user-agent conversational histories, which are temporally fragmented and insufficient for capturing continuous life trajectories. We introduce CloneMem, a benchmark for evaluating longterm memory in AI Clone scenarios grounded in non-conversational digital traces, including diaries, social media posts, and emails, spanning one to three years. CloneMem adopts a hierarchical data construction framework to ensure longitudinal coherence and defines tasks that assess an agent's ability to track evolving personal states. Experiments show that current memory mechanisms struggle in this setting, highlighting open challenges for life-grounded personalized AI. Code and dataset are available at https://github.com/AvatarMemory/CloneMemBench",
+      "authors": [
+        "Sen Hu",
+        "Zhiyu Zhang",
+        "Yuxiang Wei",
+        "Xueran Han",
+        "Zhenheng Tang",
+        "Huacan Wang",
+        "Ronghao Chen"
+      ],
+      "year": 2026,
+      "citation_count": 0,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/f9e913b5acf30db96b72b7961ebce8d76b73d9bc",
+      "doi": "10.48550/arXiv.2601.07023",
+      "source": "semantic_scholar",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "3cc3e1bc32517ebc7f05d005b983ca894bbb8613",
+      "title": "Continuum Memory Architectures for Long-Horizon LLM Agents",
+      "abstract": "Retrieval-augmented generation (RAG) has become the default strategy for providing large language model (LLM) agents with contextual knowledge. Yet RAG treats memory as a stateless lookup table: information persists indefinitely, retrieval is read-only, and temporal continuity is absent. We define the \\textit{Continuum Memory Architecture} (CMA), a class of systems that maintain and update internal state across interactions through persistent storage, selective retention, associative routing, temporal chaining, and consolidation into higher-order abstractions. Rather than disclosing implementation specifics, we specify the architectural requirements CMA imposes and show consistent behavioral advantages on tasks that expose RAG's structural inability to accumulate, mutate, or disambiguate memory. The empirical probes (knowledge updates, temporal association, associative recall, contextual disambiguation) demonstrate that CMA is a necessary architectural primitive for long-horizon agents while highlighting open challenges around latency, drift, and interpretability.",
+      "authors": [
+        "Joe Logan"
+      ],
+      "year": 2026,
+      "citation_count": 0,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/3cc3e1bc32517ebc7f05d005b983ca894bbb8613",
+      "doi": "10.48550/arXiv.2601.09913",
+      "source": "semantic_scholar",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "d5ee263f57d97aa3800b7bdf58667e824776362b",
+      "title": "LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning",
+      "abstract": "Large Language Model (LLM) agents exhibit remarkable conversational and reasoning capabilities but remain constrained by limited context windows and the lack of persistent memory. Recent efforts address these limitations via external memory architectures, often employing graph-based representations, yet most adopt flat, entangled structures that intertwine semantics with topology, leading to redundant representations, unstructured retrieval, and degraded efficiency and accuracy. To resolve these issues, we propose LiCoMemory, an end-to-end agentic memory framework for real-time updating and retrieval, which introduces CogniGraph, a lightweight hierarchical graph that utilizes entities and relations as semantic indexing layers, and employs temporal and hierarchy-aware search with integrated reranking for adaptive and coherent knowledge retrieval. Experiments on long-term dialogue benchmarks, LoCoMo and LongMemEval, show that LiCoMemory not only outperforms established baselines in temporal reasoning, multi-session consistency, and retrieval efficiency, but also notably reduces update latency. Our official code and data are available at https://github.com/EverM0re/LiCoMemory.",
+      "authors": [
+        "Zhengjun Huang",
+        "Zhoujin Tian",
+        "Qintian Guo",
+        "Fangyuan Zhang",
+        "Yingli Zhou",
+        "Di Jiang",
+        "Xiaofang Zhou"
+      ],
+      "year": 2025,
+      "citation_count": 10,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/d5ee263f57d97aa3800b7bdf58667e824776362b",
+      "doi": "10.48550/arXiv.2511.01448",
+      "source": "semantic_scholar",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "1106c2f4dbd91b62ac10c44386683b38ea33470b",
+      "title": "HEMA : A Hippocampus-Inspired Extended Memory Architecture for Long-Context AI Conversations",
+      "abstract": "Large language models (LLMs) struggle with maintaining coherence in extended conversations spanning hundreds of turns, despite performing well within their context windows. This paper introduces HEMA (Hippocampus-Inspired Extended Memory Architecture), a dual-memory system inspired by human cognitive processes. HEMA combines Compact Memory - a continuously updated one-sentence summary preserving global narrative coherence, and Vector Memory - an episodic store of chunk embeddings queried via cosine similarity. When integrated with a 6B-parameter transformer, HEMA maintains coherent dialogues beyond 300 turns while keeping prompt length under 3,500 tokens. Experimental results show substantial improvements: factual recall accuracy increases from 41% to 87%, and human-rated coherence improves from 2.7 to 4.3 on a 5-point scale. With 10K indexed chunks, Vector Memory achieves P@5>= 0.80 and R@50>= 0.74, doubling the area under the precision-recall curve compared to summarization-only approaches. Ablation studies reveal two key insights: semantic forgetting through age-weighted pruning reduces retrieval latency by 34% with minimal recall loss, and a two-level summary hierarchy prevents cascade errors in ultra-long conversations exceeding 1,000 turns. HEMA demonstrates that combining verbatim recall with semantic continuity provides a practical solution for privacy-aware conversational AI capable of month-long dialogues without model retraining.",
+      "authors": [
+        "Kwangseob Ahn"
+      ],
+      "year": 2025,
+      "citation_count": 1,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/1106c2f4dbd91b62ac10c44386683b38ea33470b",
+      "doi": "10.48550/arXiv.2504.16754",
+      "source": "semantic_scholar",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "c6661578fea389a909644ba51dddeb692fed075f",
+      "title": "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+      "abstract": "Large language model (LLM) agents have evolved to intelligently process information, make decisions, and interact with users or tools. A key capability is the integration of long-term memory capabilities, enabling these agents to draw upon historical interactions and knowledge. However, the growing memory size and need for semantic structuring pose significant challenges. In this work, we propose an autonomous memory augmentation approach, MemInsight, to enhance semantic data representation and retrieval mechanisms. By leveraging autonomous augmentation to historical interactions, LLM agents are shown to deliver more accurate and contextualized responses. We empirically validate the efficacy of our proposed approach in three task scenarios; conversational recommendation, question answering and event summarization. On the LLM-REDIAL dataset, MemInsight boosts persuasiveness of recommendations by up to 14%. Moreover, it outperforms a RAG baseline by 34% in recall for LoCoMo retrieval. Our empirical results show the potential of MemInsight to enhance the contextual performance of LLM agents across multiple tasks.",
+      "authors": [
+        "R. Salama",
+        "Jason Cai",
+        "Michelle Yuan",
+        "Anna Currey",
+        "Monica Sunkara",
+        "Yi Zhang",
+        "Yassine Benajiba"
+      ],
+      "year": 2025,
+      "citation_count": 30,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/c6661578fea389a909644ba51dddeb692fed075f",
+      "doi": "10.48550/arXiv.2503.21760",
+      "source": "semantic_scholar",
+      "relevance_score": 0.9
+    },
+    {
+      "id": "e34a188febee7ea42dc9d7c18060023b396afb53",
+      "title": "Enabling Personalized Long-term Interactions in LLM-based Agents through Persistent Memory and User Profiles",
+      "abstract": "Large language models (LLMs) increasingly serve as the central control unit of AI agents, yet current approaches remain limited in their ability to deliver personalized interactions. While Retrieval Augmented Generation enhances LLM capabilities by improving context-awareness, it lacks mechanisms to combine contextual information with user-specific data. Although personalization has been studied in fields such as human-computer interaction or cognitive science, existing perspectives largely remain conceptual, with limited focus on technical implementation. To address these gaps, we build on a unified definition of personalization as a conceptual foundation to derive technical requirements for adaptive, user-centered LLM-based agents. Combined with established agentic AI patterns such as multi-agent collaboration or multi-source retrieval, we present a framework that integrates persistent memory, dynamic coordination, self-validation, and evolving user profiles to enable personalized long-term interactions. We evaluate our approach on three public datasets using metrics such as retrieval accuracy, response correctness, or BertScore. We complement these results with a five-day pilot user study providing initial insights into user feedback on perceived personalization. The study provides early indications that guide future work and highlights the potential of integrating persistent memory and user profiles to improve the adaptivity and perceived personalization of LLM-based agents.",
+      "authors": [
+        "Rebecca Westhäußer",
+        "Wolfgang Minker",
+        "Sebastian Zepf"
+      ],
+      "year": 2025,
+      "citation_count": 1,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/e34a188febee7ea42dc9d7c18060023b396afb53",
+      "doi": "10.48550/arXiv.2510.07925",
+      "source": "semantic_scholar",
+      "relevance_score": 0.9
+    },
+    {
+      "id": "bd5f53db73a367b37fd79e361962f673b38df759",
+      "title": "TeleMem: Building Long-Term and Multimodal Memory for Agentic AI",
+      "abstract": "Large language models (LLMs) excel at many NLP tasks but struggle to sustain long-term interactions due to limited attention over extended dialogue histories. Retrieval-augmented generation (RAG) mitigates this issue but lacks reliable mechanisms for updating or refining stored memories, leading to schema-driven hallucinations, inefficient write operations, and minimal support for multimodal reasoning.To address these challenges, we propose TeleMem, a unified long-term and multimodal memory system that maintains coherent user profiles through narrative dynamic extraction, ensuring that only dialogue-grounded information is preserved. TeleMem further introduces a structured writing pipeline that batches, retrieves, clusters, and consolidates memory entries, substantially improving storage efficiency, reducing token usage, and accelerating memory operations. Additionally, a multimodal memory module combined with ReAct-style reasoning equips the system with a closed-loop observe, think, and act process that enables accurate understanding of complex video content in long-term contexts. Experimental results show that TeleMem surpasses the state-of-the-art Mem0 baseline with 19% higher accuracy, 43% fewer tokens, and a 2.1x speedup on the ZH-4O long-term role-play gaming benchmark.",
+      "authors": [
+        "Chunliang Chen",
+        "Ming Guan",
+        "Xiao Lin",
+        "Jiaxu Li",
+        "Luxi Lin",
+        "Qiyi Wang",
+        "Xiangyu Chen",
+        "Jixiang Luo",
+        "Changzhi Sun",
+        "Dell Zhang",
+        "Xuelong Li"
+      ],
+      "year": 2025,
+      "citation_count": 1,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/bd5f53db73a367b37fd79e361962f673b38df759",
+      "doi": "10.48550/arXiv.2601.06037",
+      "source": "semantic_scholar",
+      "relevance_score": 0.9
+    },
+    {
+      "id": "2511.05495v1",
+      "title": "IMDMR: An Intelligent Multi-Dimensional Memory Retrieval System for Enhanced Conversational AI",
+      "abstract": "Conversational AI systems often struggle with maintaining coherent, contextual memory across extended interactions, limiting their ability to provide personalized and contextually relevant responses. This paper presents IMDMR (Intelligent Multi-Dimensional Memory Retrieval), a novel system that addresses these limitations through a multi-dimensional search architecture. Unlike existing memory systems that rely on single-dimensional approaches, IMDMR leverages six distinct memory dimensions-semantic, entity, category, intent, context, and temporal-to provide comprehensive memory retrieval capabilities. Our system incorporates intelligent query processing with dynamic strategy selection, cross-memory entity resolution, and advanced memory integration techniques. Through comprehensive evaluation against five baseline systems including LangChain RAG, LlamaIndex, MemGPT, and spaCy + RAG, IMDMR achieves a 3.8x improvement in overall performance (0.792 vs 0.207 for the best baseline). We present both simulated (0.314) and production (0.792) implementations, demonstrating the importance of real technology integration while maintaining superiority over all baseline systems. Ablation studies demonstrate the effectiveness of multi-dimensional search, with the full system outperforming individual dimension approaches by 23.3%. Query-type analysis reveals superior performance across all categories, particularly for preferences/interests (0.630) and goals/aspirations (0.630) queries. Comprehensive visualizations and statistical analysis confirm the significance of these improvements with p < 0.001 across all metrics. The results establish IMDMR as a significant advancement in conversational AI memory systems, providing a robust foundation for enhanced user interactions and personalized experiences.",
+      "authors": [
+        "Tejas Pawar",
+        "Sarika Patil",
+        "Om Tilekar",
+        "Rushikesh Janwade",
+        "Vaibhav Helambe"
+      ],
+      "year": 2025,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2511.05495v1",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.9
+    },
+    {
+      "id": "e2098cb6aca601e02c67140fb4d241f15950703b",
+      "title": "M2A: Multimodal Memory Agent with Dual-Layer Hybrid Memory for Long-Term Personalized Interactions",
+      "abstract": "This work addresses the challenge of personalized question answering in long-term human-machine interactions: when conversational history spans weeks or months and exceeds the context window, existing personalization mechanisms struggle to continuously absorb and leverage users'incremental concepts, aliases, and preferences. Current personalized multimodal models are predominantly static-concepts are fixed at initialization and cannot evolve during interactions. We propose M2A, an agentic dual-layer hybrid memory system that maintains personalized multimodal information through online updates. The system employs two collaborative agents: ChatAgent manages user interactions and autonomously decides when to query or update memory, while MemoryManager breaks down memory requests from ChatAgent into detailed operations on the dual-layer memory bank, which couples a RawMessageStore (immutable conversation log) with a SemanticMemoryStore (high-level observations), providing memories at different granularities. In addition, we develop a reusable data synthesis pipeline that injects concept-grounded sessions from Yo'LLaVA and MC-LLaVA into LoCoMo long conversations while preserving temporal coherence. Experiments show that M2A significantly outperforms baselines, demonstrating that transforming personalization from one-shot configuration to a co-evolving memory mechanism provides a viable path for high-quality individualized responses in long-term multimodal interactions. The code is available at https://github.com/Little-Fridge/M2A.",
+      "authors": [
+        "Junyu Feng",
+        "Binxiao Xu",
+        "Jiayi Chen",
+        "M. Dai",
+        "Cenyang Wu",
+        "Haodong Li",
+        "Bohan Zeng",
+        "Yu Xie",
+        "Hao Liang",
+        "Ming Lu",
+        "Wentao Zhang"
+      ],
+      "year": 2026,
+      "citation_count": 0,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/e2098cb6aca601e02c67140fb4d241f15950703b",
+      "doi": null,
+      "source": "semantic_scholar",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "2309.02427v3",
+      "title": "Cognitive Architectures for Language Agents",
+      "abstract": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.",
+      "authors": [
+        "Theodore R. Sumers",
+        "Shunyu Yao",
+        "Karthik Narasimhan",
+        "Thomas L. Griffiths"
+      ],
+      "year": 2023,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2309.02427v3",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "2404.09982v2",
+      "title": "Memory Sharing for Large Language Model based Agents",
+      "abstract": "The adaptation of Large Language Model (LLM)-based agents to execute tasks via natural language prompts represents a significant advancement, notably eliminating the need for explicit retraining or fine tuning, but are constrained by the comprehensiveness and diversity of the provided examples, leading to outputs that often diverge significantly from expected results, especially when it comes to the open-ended questions. This paper introduces the Memory Sharing, a framework which integrates the real-time memory filter, storage and retrieval to enhance the In-Context Learning process. This framework allows for the sharing of memories among multiple agents, whereby the interactions and shared memories between different agents effectively enhance the diversity of the memories. The collective self-enhancement through interactive learning among multiple agents facilitates the evolution from individual intelligence to collective intelligence. Besides, the dynamically growing memory pool is utilized not only to improve the quality of responses but also to train and enhance the retriever. We evaluated our framework across three distinct domains involving specialized tasks of agents. The experimental results demonstrate that the MS framework significantly improves the agents' performance in addressing open-ended questions.",
+      "authors": [
+        "Hang Gao",
+        "Yongfeng Zhang"
+      ],
+      "year": 2024,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2404.09982v2",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "2511.07587v2",
+      "title": "Beyond Fact Retrieval: Episodic Memory for RAG with Generative Semantic Workspaces",
+      "abstract": "Large Language Models (LLMs) face fundamental challenges in long-context reasoning: many documents exceed their finite context windows, while performance on texts that do fit degrades with sequence length, necessitating their augmentation with external memory frameworks. Current solutions, which have evolved from retrieval using semantic embeddings to more sophisticated structured knowledge graphs representations for improved sense-making and associativity, are tailored for fact-based retrieval and fail to build the space-time-anchored narrative representations required for tracking entities through episodic events. To bridge this gap, we propose the \\textbf{Generative Semantic Workspace} (GSW), a neuro-inspired generative memory framework that builds structured, interpretable representations of evolving situations, enabling LLMs to reason over evolving roles, actions, and spatiotemporal contexts. Our framework comprises an \\textit{Operator}, which maps incoming observations to intermediate semantic structures, and a \\textit{Reconciler}, which integrates these into a persistent workspace that enforces temporal, spatial, and logical coherence. On the Episodic Memory Benchmark (EpBench) \\cite{huet_episodic_2025} comprising corpora ranging from 100k to 1M tokens in length, GSW outperforms existing RAG based baselines by up to \\textbf{20\\%}. Furthermore, GSW is highly efficient, reducing query-time context tokens by \\textbf{51\\%} compared to the next most token-efficient baseline, reducing inference time costs considerably. More broadly, GSW offers a concrete blueprint for endowing LLMs with human-like episodic memory, paving the way for more capable agents that can reason over long horizons. Code is available at https://github.com/roychowdhuryresearch/gsw-memory.",
+      "authors": [
+        "Shreyas Rajesh",
+        "Pavan Holur",
+        "Chenda Duan",
+        "David Chong",
+        "Vwani Roychowdhury"
+      ],
+      "year": 2025,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2511.07587v2",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "2510.22732v2",
+      "title": "WebATLAS: An LLM Agent with Experience-Driven Memory and Action Simulation",
+      "abstract": "Large Language Model (LLM) web agents often struggle with long-horizon web navigation and web task completion in new websites, producing inefficient action sequences unless fine-tuned on environment-specific data. We show that experience-driven memory, combined with look-ahead action simulation, is sufficient for LLM agents to adapt to unseen web environments by remembering past failures and predicting the consequences of future actions. We introduce WebATLAS (Actor-Critic Task-completion with Look-ahead Action Simulation), a memory-augmented LLM web agent that learns a lightweight internal model of the environment from interaction experience and performs hypothetical action rollouts before acting in the real world. WebATLAS builds a persistent cognitive map via curiosity-driven exploration, stores interaction outcomes as experience-based memory, and evaluates candidate actions in cognitive space using a planner--simulator--critic loop. This enables the agent to reuse past experience, avoid previously unsuccessful behaviors, and generate more efficient plans. We evaluate WebATLAS on the WebArena-Lite benchmark for autonomous web navigation and demonstrate a success rate of 63%, outperforming the previous state-of-the-art at 53.9%. Unlike previous systems, our modular architecture requires no website-specific LLM fine-tuning. Ablation studies confirm that experience-driven memory, look-ahead action simulation, and hierarchical replanning play complementary roles in enabling robust, training-free web agents.",
+      "authors": [
+        "Jiali Cheng",
+        "Anjishnu Kumar",
+        "Roshan Lal",
+        "Rishi Rajasekaran",
+        "Hani Ramezani",
+        "Omar Zia Khan",
+        "Oleg Rokhlenko",
+        "Sunny Chiu-Webster",
+        "Gang Hua",
+        "Hadi Amiri"
+      ],
+      "year": 2025,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2510.22732v2",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.8
+    },
+    {
+      "id": "2210.13383v1",
+      "title": "Evaluating Long-Term Memory in 3D Mazes",
+      "abstract": "Intelligent agents need to remember salient information to reason in partially-observed environments. For example, agents with a first-person view should remember the positions of relevant objects even if they go out of view. Similarly, to effectively navigate through rooms agents need to remember the floor plan of how rooms are connected. However, most benchmark tasks in reinforcement learning do not test long-term memory in agents, slowing down progress in this important research direction. In this paper, we introduce the Memory Maze, a 3D domain of randomized mazes specifically designed for evaluating long-term memory in agents. Unlike existing benchmarks, Memory Maze measures long-term memory separate from confounding agent abilities and requires the agent to localize itself by integrating information over time. With Memory Maze, we propose an online reinforcement learning benchmark, a diverse offline dataset, and an offline probing evaluation. Recording a human player establishes a strong baseline and verifies the need to build up and retain memories, which is reflected in their gradually increasing rewards within each episode. We find that current algorithms benefit from training with truncated backpropagation through time and succeed on small mazes, but fall short of human performance on the large mazes, leaving room for future algorithmic designs to be evaluated on the Memory Maze.",
+      "authors": [
+        "Jurgis Pasukonis",
+        "Timothy Lillicrap",
+        "Danijar Hafner"
+      ],
+      "year": 2022,
+      "citation_count": null,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2210.13383v1",
+      "doi": null,
+      "source": "arxiv",
+      "relevance_score": 0.75
+    },
+    {
+      "id": "59b990b029d0038c24b22a2ec556220daf5c02c6",
+      "title": "Architecting AI Agents: A Comprehensive Technical Guide",
+      "abstract": "The landscape of artificial intelligence agent architecture is a revolutionary paradigm shift from static classic inference systems to dynamic, goal-directed architectures that support autonomous reasoning and sophisticated task fulfillment. Modern agent architectures require high-level decision-making processes involving core model selection, system topology, and robust governance mechanisms. The transition from single-agent deployments to multi-agent systems brings in critical coordination challenges while facilitating unprecedented scalability and task specialization. Memory architecture design becomes an imperative element with the need to integrate short-term working memory, long-term episodic storage, and hybrid vector-graph database implementations to host a wide range of cognitive functions. Vector databases enable semantic memory operations with retrieval accuracies in excess of ninety percent, while structured representations allow for procedural knowledge management and temporal sequence processing. Production deployment requires pervasive observability frameworks with decision trace logging, behavior monitoring, and ongoing performance assessment in multiple operational planes. Governance controls provide ethical alignment through content filtering, action approval workflows, and runtime policy enforcement with sustained optimal system performance. The architectural choices have a direct effect on reliability, scalability, and operational efficiency, with properly designed systems exhibiting enormous task fulfillment rates, response correctness, and operational cost savings over conventional monolithic approaches.",
+      "authors": [
+        "Mamatha Adinarayana Swamy"
+      ],
+      "year": 2025,
+      "citation_count": 0,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/59b990b029d0038c24b22a2ec556220daf5c02c6",
+      "doi": "10.59573/emsj.9(5).2025.101",
+      "source": "semantic_scholar",
+      "relevance_score": 0.75
+    },
+    {
+      "id": "7e8955d44e5bc316989e91b9cb8342f37438476c",
+      "title": "Fundamentals of Building Autonomous LLM Agents",
+      "abstract": "This paper reviews the architecture and implementation methods of agents powered by large language models (LLMs). Motivated by the limitations of traditional LLMs in real-world tasks, the research aims to explore patterns to develop\"agentic\"LLMs that can automate complex tasks and bridge the performance gap with human capabilities. Key components include a perception system that converts environmental percepts into meaningful representations; a reasoning system that formulates plans, adapts to feedback, and evaluates actions through different techniques like Chain-of-Thought and Tree-of-Thought; a memory system that retains knowledge through both short-term and long-term mechanisms; and an execution system that translates internal decisions into concrete actions. This paper shows how integrating these systems leads to more capable and generalized software bots that mimic human cognitive processes for autonomous and intelligent behavior.",
+      "authors": [
+        "Victor de Lamo Castrillo",
+        "Habtom Kahsay Gidey",
+        "Alexander Lenz",
+        "Alois Knoll"
+      ],
+      "year": 2025,
+      "citation_count": 5,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/7e8955d44e5bc316989e91b9cb8342f37438476c",
+      "doi": "10.48550/arXiv.2510.09244",
+      "source": "semantic_scholar",
+      "relevance_score": 0.7
+    },
+    {
+      "id": "https://openalex.org/W4393065402",
+      "title": "A survey on large language model based autonomous agents",
+      "abstract": "Abstract Autonomous agents have long been a research focus in academic and industry communities. Previous research often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes, and makes the agents hard to achieve human-like decisions. Recently, through the acquisition of vast amounts of Web knowledge, large language models (LLMs) have shown potential in human-level intelligence, leading to a surge in research on LLM-based autonomous agents. In this paper, we present a comprehensive survey of these studies, delivering a systematic review of LLM-based autonomous agents from a holistic perspective. We first discuss the construction of LLM-based autonomous agents, proposing a unified framework that encompasses much of previous work. Then, we present a overview of the diverse applications of LLM-based autonomous agents in social science, natural science, and engineering. Finally, we delve into the evaluation strategies commonly used for LLM-based autonomous agents. Based on the previous studies, we also present several challenges and future directions in this field.",
+      "authors": [
+        "Lei Wang",
+        "Chen Ma",
+        "Xueyang Feng",
+        "Zeyu Zhang",
+        "Hao Yang",
+        "Jingsen Zhang",
+        "Zhiyuan Chen",
+        "Jiakai Tang",
+        "Xu Chen",
+        "Yankai Lin",
+        "Wayne Xin Zhao",
+        "Zhewei Wei",
+        "Ji-Rong Wen"
+      ],
+      "year": 2024,
+      "citation_count": 840,
+      "venue": "Frontiers of Computer Science",
+      "url": "https://doi.org/10.1007/s11704-024-40231-1",
+      "doi": "https://doi.org/10.1007/s11704-024-40231-1",
+      "source": "openalex",
+      "relevance_score": 0.7
+    },
+    {
+      "id": "https://openalex.org/W4390489503",
+      "title": "Empowering Working Memory for Large Language Model Agents",
+      "abstract": "Large language models (LLMs) have achieved impressive linguistic capabilities. However, a key limitation persists in their lack of human-like memory faculties. LLMs exhibit constrained memory retention across sequential interactions, hindering complex reasoning. This paper explores the potential of applying cognitive psychology's working memory frameworks, to enhance LLM architecture. The limitations of traditional LLM memory designs are analyzed, including their isolation of distinct dialog episodes and lack of persistent memory links. To address this, an innovative model is proposed incorporating a centralized Working Memory Hub and Episodic Buffer access to retain memories across episodes. This architecture aims to provide greater continuity for nuanced contextual reasoning during intricate tasks and collaborative scenarios. While promising, further research is required into optimizing episodic memory encoding, storage, prioritization, retrieval, and security. Overall, this paper provides a strategic blueprint for developing LLM agents with more sophisticated, human-like memory capabilities, highlighting memory mechanisms as a vital frontier in artificial general intelligence.",
+      "authors": [
+        "Jing Guo",
+        "Nan Li",
+        "Jianchuan Qi",
+        "Hang Yang",
+        "Ruiqiao Li",
+        "Yuzhen Feng",
+        "Si Zhang",
+        "Ming Xu"
+      ],
+      "year": 2023,
+      "citation_count": 5,
+      "venue": "arXiv (Cornell University)",
+      "url": "https://doi.org/10.48550/arxiv.2312.17259",
+      "doi": "https://doi.org/10.48550/arxiv.2312.17259",
+      "source": "openalex",
+      "relevance_score": 0.7
+    },
+    {
+      "id": "aa3da305318799a02ab371318bd01678187ef080",
+      "title": "Large Language Model Agents for Biomedicine: A Comprehensive Review of Methods, Evaluations, Challenges, and Future Directions",
+      "abstract": "Large language model (LLM)-based agents are rapidly emerging as transformative tools across biomedical research and clinical applications. By integrating reasoning, planning, memory, and tool use capabilities, these agents go beyond static language models to operate autonomously or collaboratively within complex healthcare settings. This review provides a comprehensive survey of biomedical LLM agents, spanning their core system architectures, enabling methodologies, and real-world use cases such as clinical decision making, biomedical research automation, and patient simulation. We further examine emerging benchmarks designed to evaluate agent performance under dynamic, interactive, and multimodal conditions. In addition, we systematically analyze key challenges, including hallucinations, interpretability, tool reliability, data bias, and regulatory gaps, and discuss corresponding mitigation strategies. Finally, we outline future directions in areas such as continual learning, federated adaptation, robust multi-agent coordination, and human AI collaboration. This review aims to establish a foundational understanding of biomedical LLM agents and provide a forward-looking roadmap for building trustworthy, reliable, and clinically deployable intelligent systems.",
+      "authors": [
+        "Xiaoran Xu",
+        "Ravi Sankar"
+      ],
+      "year": 2025,
+      "citation_count": 4,
+      "venue": null,
+      "url": "https://www.semanticscholar.org/paper/aa3da305318799a02ab371318bd01678187ef080",
+      "doi": "10.3390/info16100894",
+      "source": "semantic_scholar",
+      "relevance_score": 0.7
+    }
+  ],
+  "research_gaps": [
+    {
+      "title": "Lack of Standardized, Ecologically Valid Benchmarks for Long-Term Memory",
+      "description": "Existing evaluations of long-term memory in LLM agents rely on narrow, domain-specific benchmarks (e.g., household tasks, synthetic dialogues, 3D mazes, conversational histories) that fail to capture the full complexity of real-world, long-horizon memory demands. There is no unified, standardized benchmark suite that spans multiple agent types, modalities, and task domains, making cross-study comparison nearly impossible. New benchmarks must go beyond fact retrieval to assess episodic, semantic, and spatial memory in ecologically valid settings.",
+      "gap_type": "methodological",
+      "evidence": [
+        "Most systems are evaluated on narrow benchmarks (household tasks, synthetic dialogues) with limited real-world generalizability (Papers 2, 4, 10)",
+        "The 3D maze benchmark is limited in scope and may not capture the full complexity of memory demands in real-world or open-ended environments (Paper 20)",
+        "Lack of standardized benchmarks makes cross-study comparison of agent architectures difficult",
+        "Existing memory benchmarks rely on temporally fragmented conversational histories, which are insufficient for modeling rich human experiences (Paper 7)"
+      ],
+      "supporting_paper_indices": [
+        2,
+        4,
+        7,
+        10,
+        20,
+        23
+      ]
+    },
+    {
+      "title": "Episodic Memory as a First-Class Capability in LLM Agents",
+      "description": "While semantic and procedural memory forms are increasingly well-supported in LLM agent architectures, episodic memory — the ability to encode, retain, and retrieve specific past experiences in a temporally ordered, instance-specific manner — remains critically underdeveloped. Current RAG-based and graph-based systems lack the temporal continuity and single-shot learning properties that episodic memory requires. This gap is especially acute for agents that must personalize behavior over long interaction histories.",
+      "gap_type": "topic",
+      "evidence": [
+        "Episodic memory — enabling single-shot, instance-specific learning — is identified as a critical missing capability for long-term LLM agents, drawing direct parallels to biological memory systems (Paper 1)",
+        "RAG-based systems lack reliable memory update/refinement mechanisms, leading to stale or hallucinated retrievals (Papers 5, 9, 12)",
+        "Beyond Fact Retrieval: Episodic Memory for RAG with Generative Semantic Workspaces (Paper 18)"
+      ],
+      "supporting_paper_indices": [
+        1,
+        5,
+        9,
+        12,
+        18,
+        24
+      ]
+    },
+    {
+      "title": "Unresolved Tension Between Collective/Shared and Personalized/Private Memory",
+      "description": "A fundamental contradiction exists in the literature regarding whether long-term memory should be shared across agents to maximize diversity and coverage, or kept strictly individualized to preserve user-specific context, privacy, and relevance. Papers advocating memory sharing report performance gains from broader example pools, while personalization-focused papers argue that collective memory introduces noise and fails to capture individual user nuances such as emotions, opinions, and preferences. This tension has not been empirically resolved.",
+      "gap_type": "contradiction",
+      "evidence": [
+        "Paper 17 advocates for memory sharing across agents as a key mechanism to improve performance, implying collective memory is beneficial; however, Papers 7 and 12 emphasize highly individualized, user-specific memory as the critical requirement",
+        "Memory sharing may introduce noise or irrelevant experiences from other agents, potentially degrading performance in highly specialized tasks (Paper 17)",
+        "Existing memory benchmarks and retrieval mechanisms are insufficient for capturing the full richness of user-specific context, including emotions, opinions, and experiences over time (Paper 7)"
+      ],
+      "supporting_paper_indices": [
+        7,
+        12,
+        17,
+        19
+      ]
+    },
+    {
+      "title": "Multimodal Memory Integration and Cross-Modal Retrieval",
+      "description": "The vast majority of long-term memory architectures for LLM agents are designed for text-only modalities. Multimodal memory — integrating visual, auditory, and other sensory information alongside language — remains nascent, with significant unsolved challenges in cross-modal alignment, unified memory representation, and retrieval across modalities. As agents are increasingly deployed in embodied and real-world settings, this gap becomes critical.",
+      "gap_type": "scope",
+      "evidence": [
+        "Multimodal memory integration is still nascent and faces challenges in cross-modal alignment and retrieval (Papers 9, 11)",
+        "TeleMem: Building Long-Term and Multimodal Memory for Agentic AI (Paper 13)",
+        "M2A: Multimodal Memory Agent with Dual-Layer Hybrid Memory for Long-Term Personalized Interactions (Paper 15)",
+        "Paper 1 focuses on high-level, language-driven memory and social reasoning, while Paper 20 focuses on low-level spatial and object memory — suggesting no unified definition of agent memory exists across modalities"
+      ],
+      "supporting_paper_indices": [
+        9,
+        11,
+        13,
+        15,
+        20
+      ]
+    },
+    {
+      "title": "Efficiency vs. Capability Trade-off in Memory Architecture Design",
+      "description": "A persistent and unresolved tension exists between lightweight, low-overhead memory systems and rich, multi-layered architectures. Some work prioritizes minimal computational cost to enable deployment at scale, while others invest heavily in complex hierarchical or graph-based structures for superior performance. No principled framework exists for navigating this trade-off, and empirical comparisons under matched resource budgets are absent from the literature.",
+      "gap_type": "contradiction",
+      "evidence": [
+        "Some papers argue for lightweight, minimal-overhead memory systems (Paper 9 — LiCoMemory), while others advocate for rich, multi-layered architectures with significant computational investment (Papers 4, 5, 11), reflecting a tension between efficiency and capability",
+        "Generative agents are computationally expensive due to repeated LLM inference, limiting scalability to large populations (Paper 2)",
+        "Dual or hierarchical memory architectures consistently outperform single-layer memory approaches for extended task execution (Papers 3, 8, 10)"
+      ],
+      "supporting_paper_indices": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        11
+      ]
+    },
+    {
+      "title": "Memory Architecture for High-Stakes Domain-Specific Agents (e.g., Biomedical)",
+      "description": "While general-purpose LLM agent memory is rapidly advancing, domain-specific applications — particularly in high-stakes fields like biomedicine and clinical care — have received minimal dedicated attention regarding memory design. The unique requirements of these domains (safety, auditability, regulatory compliance, hallucination prevention, long patient histories) demand specialized memory architectures that current general frameworks do not address. Evaluation frameworks for memory in clinical agents are also absent.",
+      "gap_type": "scope",
+      "evidence": [
+        "Comprehensive evaluation frameworks are needed to assess LLM agent performance in biomedical domains, as standard NLP benchmarks are insufficient for capturing clinical complexity (Paper 25)",
+        "Key challenges include safety, reliability, hallucination, interpretability, and ethical concerns specific to high-stakes healthcare environments (Paper 25)",
+        "Ethical, regulatory, and safety frameworks for clinical deployment are still nascent and underexplored",
+        "Coverage of proprietary or closed-source systems is inherently limited, potentially skewing the landscape presented"
+      ],
+      "supporting_paper_indices": [
+        25,
+        23,
+        16
+      ]
+    },
+    {
+      "title": "Integration of Cognitive Science Principles with Engineering-Centric Memory Design",
+      "description": "A growing divide exists between papers that ground memory architecture design in cognitive science and neuroscience (e.g., hippocampal models, working memory frameworks) and those that take a purely engineering-centric approach focused on implementation patterns and system performance. These two streams rarely cross-validate their designs or findings, leaving open the question of whether cognitive inspiration genuinely improves agent memory or is merely a useful metaphor. A unified framework integrating both perspectives is absent.",
+      "gap_type": "integration",
+      "evidence": [
+        "The degree to which human cognitive architectures should guide AI agent design is implicitly contested: Paper 4 strongly advocates human-inspired perspectives, while Papers 21 and 22 take a more engineering-centric view without necessarily grounding design choices in cognitive science",
+        "Human-inspired analogies for AI memory may not fully capture the technical nuances of machine learning systems",
+        "Cognitive and neuroscience-inspired architectures (hippocampus, working memory, cognitive frameworks) provide effective design blueprints for LLM memory systems (Papers 6, 10, 16, 24)"
+      ],
+      "supporting_paper_indices": [
+        4,
+        6,
+        10,
+        16,
+        21,
+        22,
+        24
+      ]
+    },
+    {
+      "title": "Temporal Dynamics and Memory Update Mechanisms in Long-Term Agents",
+      "description": "Current memory systems largely treat memory as a static or append-only store, with limited mechanisms for forgetting, updating, consolidating, or re-weighting memories over time. This mirrors a known limitation of RAG — its stateless, read-only nature — but extends to graph-based and hierarchical systems as well. Biologically, memory is dynamic: it is continuously reconsolidated, pruned, and updated. Replicating these temporal dynamics in LLM agent memory systems remains an open and underexplored research challenge.",
+      "gap_type": "topic",
+      "evidence": [
+        "RAG (Retrieval-Augmented Generation) is criticized for being stateless, read-only, and lacking temporal continuity or reliable update mechanisms (Papers 5, 9, 12)",
+        "RAG-based systems lack reliable memory update/refinement mechanisms, leading to stale or hallucinated retrievals",
+        "Continuum Memory Architectures for Long-Horizon LLM Agents (Paper 8) — suggesting the need for continuous, evolving memory",
+        "Memory architecture with retrieval based on recency, importance, and relevance (Paper 2) — but update/forgetting mechanisms remain underspecified"
+      ],
+      "supporting_paper_indices": [
+        1,
+        2,
+        5,
+        8,
+        9,
+        12,
+        14
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "title": "MemBench: A Unified Multi-Domain, Multi-Modal Benchmark Suite for Long-Term Agent Memory",
+      "description": "We hypothesize that a standardized benchmark suite spanning diverse agent types (conversational, embodied, task-planning), multiple modalities (text, vision, spatial), and ecologically valid task domains (household management, healthcare scheduling, open-ended dialogue) will reveal systematic performance gaps across existing memory architectures that domain-specific benchmarks obscure. Specifically, we predict that architectures optimized for narrow benchmarks will show significant performance degradation (>20%) when evaluated on cross-domain episodic and spatial memory tasks.",
+      "related_gap_title": "Lack of Standardized, Ecologically Valid Benchmarks for Long-Term Memory",
+      "suggested_methodology": "Design and release a modular benchmark suite (MemBench) comprising at least five task domains, each with subtasks targeting episodic, semantic, and spatial memory. Use human-annotated ground truth from real-world interaction logs. Evaluate 8–10 representative LLM agent memory architectures under identical conditions, reporting standardized metrics (recall@k, temporal ordering accuracy, cross-domain transfer score). Conduct inter-rater reliability studies to validate ecological validity of tasks."
+    },
+    {
+      "title": "Ecological Validity Scoring Framework for Long-Term Memory Benchmarks",
+      "description": "We hypothesize that existing benchmarks can be systematically scored on an 'ecological validity index' (EVI) — a composite measure of task naturalism, temporal horizon, modality coverage, and memory type diversity — and that EVI scores will strongly predict the real-world deployment performance of memory architectures, providing a principled basis for benchmark selection and design.",
+      "related_gap_title": "Lack of Standardized, Ecologically Valid Benchmarks for Long-Term Memory",
+      "suggested_methodology": "Develop the EVI rubric through expert elicitation (cognitive scientists, NLP researchers, HCI practitioners). Score a corpus of 30+ existing benchmarks using the rubric. Correlate EVI scores with downstream agent performance on real-world pilot deployments across three domains. Use regression analysis to identify which EVI dimensions are most predictive, then publish the rubric as an open standard for future benchmark developers."
+    },
+    {
+      "title": "Temporally-Indexed Episodic Memory Modules Improve Personalization in Long-Horizon LLM Agents",
+      "description": "We hypothesize that augmenting LLM agents with a dedicated episodic memory module — featuring timestamped, instance-specific event encoding, temporal ordering, and single-shot storage — will significantly outperform standard RAG-based retrieval on tasks requiring personalized, temporally coherent recall of past interactions, particularly over interaction histories exceeding 100 turns.",
+      "related_gap_title": "Episodic Memory as a First-Class Capability in LLM Agents",
+      "suggested_methodology": "Implement a prototype episodic memory module using a temporally-indexed vector store with event-boundary detection and recency-weighted retrieval. Compare against RAG baselines and graph-based memory systems on a curated long-horizon personalization benchmark (e.g., multi-session user assistants). Measure temporal ordering accuracy, personalization fidelity (user preference alignment), and single-shot learning success rate. Conduct ablation studies isolating the contribution of temporal indexing vs. instance-specific encoding."
+    },
+    {
+      "title": "Hippocampal-Inspired Sequence Encoding Enables Single-Shot Episodic Memory in LLM Agents",
+      "description": "We hypothesize that incorporating a hippocampal-inspired complementary learning system (CLS) — with a fast-learning episodic buffer and a slow-learning semantic consolidation layer — into LLM agent memory will enable true single-shot episodic encoding and retrieval, addressing the core limitation of current architectures that require repeated exposure to retain instance-specific experiences.",
+      "related_gap_title": "Episodic Memory as a First-Class Capability in LLM Agents",
+      "suggested_methodology": "Design a dual-memory architecture inspired by the CLS theory: a fast-binding episodic buffer (implemented as a lightweight key-value store with high-resolution event representations) coupled with a slow-consolidation semantic layer (fine-tuned LLM embeddings). Train and evaluate on tasks requiring one-shot recall of specific past events after long delays. Compare against standard RAG, MemGPT, and graph-based baselines. Measure single-shot recall accuracy, interference resistance, and consolidation efficiency."
+    },
+    {
+      "title": "Adaptive Memory Partitioning: A Hybrid Shared-Private Architecture Resolves the Collective vs. Personalized Memory Trade-off",
+      "description": "We hypothesize that a hybrid memory architecture — dynamically partitioning memories into a shared collective pool (for general world knowledge and common patterns) and a private personalized store (for user-specific preferences, emotions, and opinions) — will outperform both purely shared and purely private memory systems on a combined metric of task performance and personalization fidelity, empirically resolving the contradiction in the literature.",
+      "related_gap_title": "Unresolved Tension Between Collective/Shared and Personalized/Private Memory",
+      "suggested_methodology": "Implement three memory conditions: (1) fully shared, (2) fully private, and (3) adaptive hybrid with a learned routing mechanism that classifies memories as shared or private based on content type (factual vs. opinion/preference). Evaluate across 200+ simulated users in a multi-session conversational agent setting. Measure task success rate, personalization alignment (user satisfaction surveys), noise-to-signal ratio in retrieval, and privacy leakage. Use a within-subjects design to control for user variability."
+    },
+    {
+      "title": "Privacy-Preserving Federated Memory Sharing Achieves Collective Performance Gains Without Personalization Loss",
+      "description": "We hypothesize that federated learning techniques applied to agent memory — where shared memory representations are learned across users without exposing raw personal memories — will capture the performance benefits of collective memory (broader example coverage, diversity) while preserving the personalization benefits of private memory, offering an empirical resolution to the shared-vs-private contradiction.",
+      "related_gap_title": "Unresolved Tension Between Collective/Shared and Personalized/Private Memory",
+      "suggested_methodology": "Design a federated memory architecture where agents share differentially-private gradient updates to a collective memory embedding space while maintaining local private memory stores. Compare against fully shared, fully private, and non-federated hybrid baselines on multi-user benchmarks. Evaluate on task performance, personalization fidelity, privacy leakage (membership inference attacks), and communication overhead. Conduct sensitivity analysis on privacy budget (epsilon) vs. performance trade-off."
+    },
+    {
+      "title": "Cross-Modal Memory Alignment via Contrastive Pre-Training Enables Unified Multimodal Retrieval in Embodied Agents",
+      "description": "We hypothesize that pre-training a unified multimodal memory encoder using contrastive objectives across text, vision, and audio modalities — aligned in a shared latent space — will enable accurate cross-modal memory retrieval (e.g., retrieving a visual memory given a textual query) in embodied agents, significantly outperforming modality-specific retrieval systems on cross-modal association tasks.",
+      "related_gap_title": "Multimodal Memory Integration and Cross-Modal Retrieval",
+      "suggested_methodology": "Collect or curate a multimodal episodic memory dataset from embodied agent interactions (e.g., egocentric video with paired audio and language annotations). Pre-train a unified encoder using contrastive loss (CLIP-style) across all three modalities. Fine-tune on cross-modal retrieval tasks. Evaluate against modality-specific RAG baselines and late-fusion approaches on cross-modal recall@k, zero-shot transfer, and retrieval latency. Test in a real-world robotic navigation scenario."
+    },
+    {
+      "title": "Hierarchical Multimodal Memory Graphs Support Long-Horizon Spatial Reasoning in Embodied LLM Agents",
+      "description": "We hypothesize that a hierarchical memory graph — where nodes represent multimodal episodic events (visual scenes, spoken instructions, tactile feedback) and edges encode spatial and temporal relationships — will enable superior long-horizon spatial reasoning and object re-identification in embodied agents compared to flat, text-only memory stores.",
+      "related_gap_title": "Multimodal Memory Integration and Cross-Modal Retrieval",
+      "suggested_methodology": "Implement a hierarchical multimodal memory graph with three levels: raw sensory events, abstracted scene representations, and semantic concept nodes. Use graph neural networks for retrieval. Evaluate on embodied AI benchmarks (e.g., AI2-THOR, ScanQA) requiring long-horizon spatial memory. Compare against text-only RAG, flat multimodal stores, and scene graph baselines. Measure spatial recall accuracy, object re-identification rate, and query response latency under varying memory sizes."
+    },
+    {
+      "title": "Iso-Budget Memory Architecture Comparison Reveals Principled Efficiency-Capability Pareto Frontiers",
+      "description": "We hypothesize that when evaluated under strictly matched computational budgets (FLOPs, latency, memory footprint), lightweight memory systems and complex hierarchical/graph-based architectures will occupy distinct regions of an efficiency-capability Pareto frontier, and that this frontier can be characterized by a small set of architectural design choices (indexing strategy, retrieval depth, update frequency) that predict where any given system falls.",
+      "related_gap_title": "Efficiency vs. Capability Trade-off in Memory Architecture Design",
+      "suggested_methodology": "Select 10+ representative memory architectures spanning the lightweight-to-complex spectrum. Implement all under a unified evaluation harness with strict resource budgeting (fixed FLOP counts, wall-clock latency caps, RAM limits). Evaluate on a common benchmark suite across three task complexity levels. Plot efficiency-capability Pareto curves. Use ablation studies and sensitivity analysis to identify which architectural components drive Pareto improvements. Publish a decision framework mapping resource constraints to optimal architecture choices."
+    },
+    {
+      "title": "A Principled Complexity-Scaling Law for Memory Architecture Selection Based on Task Horizon and Resource Budget",
+      "description": "We hypothesize that the optimal memory architecture complexity (measured by number of memory layers, retrieval hops, and update operations) follows a predictable scaling relationship with task horizon length and available computational budget, analogous to neural scaling laws, enabling practitioners to select architectures without exhaustive empirical search.",
+      "related_gap_title": "Efficiency vs. Capability Trade-off in Memory Architecture Design",
+      "suggested_methodology": "Systematically vary memory architecture complexity (1–5 layers, 1–4 retrieval hops) and task horizon (10–10,000 interaction steps) across a grid of experiments under fixed resource budgets. Fit power-law and log-linear models to the resulting performance data. Validate the derived scaling law on held-out architecture-task combinations. Publish the scaling law as a practical selection guide with confidence intervals and boundary conditions."
+    },
+    {
+      "title": "Auditable, Safety-Constrained Memory Architecture for Clinical LLM Agents Reduces Hallucination and Supports Regulatory Compliance",
+      "description": "We hypothesize that a domain-specific memory architecture for clinical LLM agents — incorporating structured patient history graphs, provenance-tracked memory entries, hallucination-detection retrieval filters, and role-based access controls — will significantly reduce factual hallucination rates and improve auditability compared to general-purpose memory frameworks, while meeting simulated regulatory compliance criteria (e.g., HIPAA, FDA guidelines for clinical decision support).",
+      "related_gap_title": "Memory Architecture for High-Stakes Domain-Specific Agents (e.g., Biomedical)",
+      "suggested_methodology": "Design a clinical memory architecture with: (1) a structured EHR-aligned patient history graph, (2) provenance metadata on all memory entries, (3) a retrieval-time hallucination filter using medical knowledge bases (UMLS, SNOMED), and (4) role-based access control. Evaluate on clinical NLP benchmarks (e.g., MedQA, clinical summarization datasets) and a simulated multi-visit patient interaction scenario. Measure hallucination rate (human expert annotation), auditability score, compliance checklist adherence, and retrieval accuracy. Compare against general-purpose RAG and MemGPT baselines."
+    },
+    {
+      "title": "Longitudinal Patient Memory Modeling Improves Diagnostic Consistency in Multi-Session Clinical LLM Agents",
+      "description": "We hypothesize that LLM agents equipped with longitudinal patient memory — encoding temporally ordered clinical events, medication histories, and symptom progressions across multiple sessions — will demonstrate significantly higher diagnostic consistency and fewer contradictory recommendations compared to agents relying on single-session context windows or generic RAG retrieval.",
+      "related_gap_title": "Memory Architecture for High-Stakes Domain-Specific Agents (e.g., Biomedical)",
+      "suggested_methodology": "Construct a simulated multi-session clinical interaction dataset (synthetic patient trajectories over 6–12 months) with ground-truth diagnostic labels. Implement a longitudinal memory module using a temporally-ordered clinical event graph. Compare against single-session context, generic RAG, and summarization-based memory baselines. Measure diagnostic consistency (agreement across sessions), contradiction rate (flagged by clinical expert review), and recall of clinically relevant historical events. Conduct a blinded evaluation with clinical domain experts."
+    },
+    {
+      "title": "Cognitive Science-Grounded Memory Architectures Outperform Engineering-Only Designs on Interference Resistance and Generalization",
+      "description": "We hypothesize that LLM agent memory architectures explicitly grounded in cognitive science principles (e.g., complementary learning systems, working memory capacity limits, memory consolidation schedules) will demonstrate superior interference resistance, generalization to novel tasks, and long-horizon retention compared to architectures designed purely on engineering heuristics, providing empirical evidence that cognitive inspiration yields measurable performance benefits beyond metaphor.",
+      "related_gap_title": "Integration of Cognitive Science Principles with Engineering-Centric Memory Design",
+      "suggested_methodology": "Implement matched pairs of memory architectures: one grounded in a specific cognitive science principle (e.g., CLS theory, Baddeley's working memory model) and one engineering-equivalent baseline with similar computational cost but no cognitive grounding. Evaluate both on tasks specifically designed to stress-test the targeted cognitive property (interference resistance, capacity limits, consolidation). Use a pre-registered experimental design to avoid confirmation bias. Recruit cognitive scientists as co-evaluators to assess fidelity of cognitive grounding."
+    },
+    {
+      "title": "A Unified Cognitively-Informed Engineering Framework (CIEF) for LLM Agent Memory Design",
+      "description": "We hypothesize that a unified framework explicitly mapping cognitive science constructs (episodic/semantic/working memory, consolidation, forgetting curves) to engineering implementation patterns (vector stores, graph structures, retrieval algorithms, update schedules) will serve as a productive design space for novel memory architectures, and that architectures derived from this framework will outperform ad hoc designs on a standardized benchmark suite.",
+      "related_gap_title": "Integration of Cognitive Science Principles with Engineering-Centric Memory Design",
+      "suggested_methodology": "Conduct a systematic literature review mapping cognitive science memory constructs to existing engineering implementations. Develop the CIEF as a structured design space with explicit mappings and design rules. Use the framework to derive three novel memory architectures. Evaluate these against 5+ existing architectures on a multi-domain benchmark. Measure performance, interpretability (expert ratings of design coherence), and generalizability. Publish the framework as an open design tool with case studies."
+    },
+    {
+      "title": "Biologically-Inspired Forgetting and Reconsolidation Mechanisms Improve Long-Term Agent Performance by Reducing Memory Interference",
+      "description": "We hypothesize that LLM agent memory systems incorporating biologically-inspired temporal dynamics — specifically, Ebbinghaus-curve-based forgetting, sleep-cycle-analogous consolidation, and reconsolidation triggered by contradictory new evidence — will outperform static and append-only memory systems on long-horizon tasks by reducing retrieval interference and maintaining memory relevance over time.",
+      "related_gap_title": "Temporal Dynamics and Memory Update Mechanisms in Long-Term Agents",
+      "suggested_methodology": "Implement a dynamic memory system with three temporal mechanisms: (1) exponential decay of memory salience weights following Ebbinghaus forgetting curves, (2) periodic offline consolidation that merges redundant memories and strengthens frequently accessed ones, and (3) reconsolidation triggered when new information contradicts stored memories. Compare against append-only RAG, static graph memory, and no-forgetting baselines on long-horizon benchmarks (1,000+ interaction steps). Measure retrieval precision over time, interference rate, memory footprint growth, and task performance at multiple temporal checkpoints."
+    },
+    {
+      "title": "Contradiction-Triggered Memory Updating Enables Adaptive Belief Revision in Long-Running LLM Agents",
+      "description": "We hypothesize that an explicit contradiction-detection and memory-update mechanism — which identifies conflicts between newly acquired information and stored memories, triggers targeted memory revision, and propagates updates through a memory graph — will enable LLM agents to maintain accurate, up-to-date world models over long interaction horizons, significantly outperforming append-only systems on tasks requiring belief revision.",
+      "related_gap_title": "Temporal Dynamics and Memory Update Mechanisms in Long-Term Agents",
+      "suggested_methodology": "Design a contradiction-detection module using natural language inference (NLI) models to flag conflicts between incoming information and stored memory entries. Implement a graph-based memory update propagation algorithm that revises affected nodes and edges. Evaluate on a curated belief-revision benchmark with ground-truth memory state annotations at multiple time points. Compare against append-only RAG, full memory replacement, and human-in-the-loop update baselines. Measure belief accuracy over time, update latency, false positive contradiction rate, and downstream task performance."
+    }
+  ],
+  "topic_clusters": [
+    {
+      "label": "Memory Architectures & Systems for LLM Agents",
+      "description": "Papers proposing novel memory architectures, frameworks, or systems (short-term, long-term, episodic, multimodal) to enhance LLM agents' ability to persist and retrieve information.",
+      "paper_indices": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        17,
+        23
+      ]
+    },
+    {
+      "label": "Surveys & Taxonomies of AI Memory and Agents",
+      "description": "Papers that provide broad surveys, taxonomies, or conceptual frameworks covering AI long-term memory, cognitive architectures, or autonomous LLM agent design.",
+      "paper_indices": [
+        3,
+        15,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "label": "Personalization & Long-Term User Interaction",
+      "description": "Papers focused on enabling personalized, context-aware, and user-adaptive long-term interactions between LLM agents and individual users.",
+      "paper_indices": [
+        6,
+        11,
+        16,
+        18
+      ]
+    },
+    {
+      "label": "Generative & Embodied Agents with Memory",
+      "description": "Papers exploring memory-augmented agents that simulate human behavior, operate in embodied or interactive environments, or execute long-horizon tasks.",
+      "paper_indices": [
+        1,
+        19
+      ]
+    },
+    {
+      "label": "Biomedical & Domain-Specific LLM Agents",
+      "description": "Papers reviewing or applying LLM-based agents with reasoning, planning, and memory capabilities specifically within biomedical or clinical domains.",
+      "paper_indices": [
+        24
+      ]
+    }
+  ],
+  "cluster_analyses": [
+    {
+      "cluster_label": "Memory Architectures & Systems for LLM Agents",
+      "methodologies": [
+        "Retrieval-Augmented Generation (RAG) as a baseline and extension point for memory systems",
+        "Dual/hierarchical memory architectures (short-term + long-term modules)",
+        "Graph-based memory representations (knowledge graphs, semantic graphs)",
+        "Cognitive psychology and neuroscience-inspired design (hippocampus model, working memory framework)",
+        "Dynamic memory extraction and summarization using LLMs",
+        "Vector embedding and semantic similarity search for memory retrieval",
+        "Multi-dimensional retrieval combining semantic, temporal, and contextual signals",
+        "Episodic memory modeling with instance-specific context encoding",
+        "Continuum Memory Architecture (CMA) with stateful, writable, temporally-aware memory",
+        "Multimodal memory integration (text + image + other modalities)",
+        "Autonomous memory management with conflict detection and resolution",
+        "Benchmarking on household task execution, multi-session dialogue, and long-context QA datasets",
+        "Compact memory summarization (e.g., HEMA's Compact Memory module)",
+        "Personalization via incremental concept and preference tracking"
+      ],
+      "findings": [
+        {
+          "text": "Episodic memory — enabling single-shot, instance-specific learning — is identified as a critical missing capability for long-term LLM agents, drawing direct parallels to biological memory systems.",
+          "paper_indices": [
+            1,
+            18
+          ]
+        },
+        {
+          "text": "Dual or hierarchical memory architectures (combining short-term/working memory with long-term memory) consistently outperform single-layer memory approaches for extended task execution and conversation coherence.",
+          "paper_indices": [
+            3,
+            6,
+            10,
+            15,
+            24
+          ]
+        },
+        {
+          "text": "RAG (Retrieval-Augmented Generation) is the dominant baseline strategy for external memory, but is criticized for being stateless, read-only, and lacking temporal continuity or reliable update mechanisms.",
+          "paper_indices": [
+            8,
+            13,
+            18
+          ]
+        },
+        {
+          "text": "Graph-based and structured memory representations improve semantic organization and retrieval precision over flat vector-store approaches, but many existing graph architectures are flat and entangled.",
+          "paper_indices": [
+            9,
+            11,
+            14
+          ]
+        },
+        {
+          "text": "Cognitive and neuroscience-inspired architectures (hippocampus, working memory, cognitive frameworks) provide effective design blueprints for LLM memory systems.",
+          "paper_indices": [
+            1,
+            6,
+            10,
+            24
+          ]
+        },
+        {
+          "text": "Scalable, production-ready memory systems require dynamic extraction, selective retention, and conflict resolution across multi-session dialogues to maintain consistency.",
+          "paper_indices": [
+            5,
+            11,
+            13
+          ]
+        },
+        {
+          "text": "Multimodal memory (integrating text, images, and other modalities) is an emerging requirement for long-term personalized agent interactions.",
+          "paper_indices": [
+            13,
+            15
+          ]
+        },
+        {
+          "text": "Multi-dimensional retrieval strategies (combining semantic, temporal, and contextual signals) outperform single-vector similarity search for conversational AI memory.",
+          "paper_indices": [
+            9,
+            14,
+            18
+          ]
+        },
+        {
+          "text": "Continuum Memory Architectures (CMA) propose a principled framework where memory is stateful, writable, and temporally continuous — a significant departure from standard RAG.",
+          "paper_indices": [
+            8
+          ]
+        },
+        {
+          "text": "Working memory frameworks from cognitive psychology, when applied to LLMs, improve complex multi-step reasoning and reduce errors in sequential task execution.",
+          "paper_indices": [
+            3,
+            24
+          ]
+        },
+        {
+          "text": "Lightweight memory architectures that avoid heavy graph overhead can achieve efficient long-term reasoning without sacrificing performance.",
+          "paper_indices": [
+            9
+          ]
+        },
+        {
+          "text": "Autonomous memory augmentation — where agents self-manage memory without human curation — is a key design goal, enabling scalable deployment.",
+          "paper_indices": [
+            5,
+            11
+          ]
+        }
+      ],
+      "limitations": [
+        "Fixed context windows of LLMs remain a hard constraint that external memory only partially mitigates (Papers 1, 3, 6, 7)",
+        "RAG-based systems lack reliable memory update/refinement mechanisms, leading to stale or hallucinated retrievals (Papers 5, 9, 12)",
+        "Graph-based memory architectures often suffer from flat, entangled structures that reduce retrieval precision (Paper 6)",
+        "Most systems are evaluated on narrow benchmarks (household tasks, synthetic dialogues) with limited real-world generalizability (Papers 2, 4, 10)",
+        "Multimodal memory integration is still nascent and faces challenges in cross-modal alignment and retrieval (Papers 9, 11)",
+        "Scalability of memory stores over very long time horizons (weeks/months) is not fully addressed (Papers 3, 11)",
+        "Autonomous memory management risks uncontrolled memory growth and privacy concerns (Paper 8)",
+        "Biological analogies (hippocampus, episodic memory) are approximations and may not translate perfectly to LLM architectures (Papers 1, 7)",
+        "Computational overhead of graph construction and maintenance can be prohibitive for lightweight deployment (Paper 6)",
+        "Lack of standardized benchmarks for long-term, multi-session memory evaluation across the field (Papers 4, 5, 10)"
+      ],
+      "trend": "increasing",
+      "contradictions": [
+        "RAG is treated as the standard, effective baseline by some papers (Papers 2, 3, 10), while others argue it is fundamentally inadequate due to its stateless, read-only nature (Papers 5, 9, 12).",
+        "Graph-based memory is advocated as a superior structured representation (Papers 6, 8), yet Paper 6 itself critiques most graph architectures as flat and entangled, undermining the general claim of graph superiority.",
+        "Some papers argue for lightweight, minimal-overhead memory systems (Paper 6 — LiCoMemory), while others advocate for rich, multi-layered architectures with significant computational investment (Papers 4, 5, 11), reflecting a tension between efficiency and capability.",
+        "Episodic memory is framed as the 'missing piece' and a novel contribution (Paper 1), yet several other papers (Papers 7, 12) independently implement episodic-like mechanisms, suggesting the concept is already being applied even if not always labeled as such.",
+        "Autonomous memory management is presented as a key goal (Papers 3, 8), but the lack of human oversight in memory curation is implicitly a limitation acknowledged in the same works, creating an internal tension between autonomy and reliability."
+      ]
+    },
+    {
+      "cluster_label": "Surveys & Taxonomies of AI Memory and Agents",
+      "methodologies": [
+        "Systematic literature survey and review of prior work",
+        "Taxonomy and classification framework development (e.g., categorizing memory types, agent components)",
+        "Cognitive architecture modeling inspired by human memory and cognition",
+        "Comparative analysis of existing LLM agent implementations and benchmarks",
+        "Component-based architectural decomposition (memory, planning, perception, action modules)",
+        "Prompt chaining and internal control flow analysis",
+        "Empirical evaluation review of agent performance across tasks"
+      ],
+      "findings": [
+        {
+          "text": "Long-term memory is a critical and increasingly recognized component of AI systems, encompassing storage, retrieval, and utilization of information over time, analogous to human memory systems.",
+          "paper_indices": [
+            4,
+            16,
+            23
+          ]
+        },
+        {
+          "text": "LLM-based autonomous agents represent a paradigm shift from static inference systems to dynamic, goal-directed architectures capable of autonomous reasoning and complex task fulfillment.",
+          "paper_indices": [
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "text": "A systematic taxonomy or cognitive framework is needed to organize and understand the growing landscape of language agents and their components (perception, memory, action, planning).",
+          "paper_indices": [
+            16,
+            23
+          ]
+        },
+        {
+          "text": "Key architectural components of LLM agents include memory modules, planning/reasoning mechanisms, tool use, and action execution, which together enable agents to bridge the performance gap with human capabilities.",
+          "paper_indices": [
+            16,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "text": "Human-inspired or cognitive architecture perspectives are widely adopted as organizing frameworks for understanding and designing AI agent memory and reasoning systems.",
+          "paper_indices": [
+            4,
+            16
+          ]
+        },
+        {
+          "text": "Agents augmented with external resources (e.g., the Internet, databases) and internal control flows (e.g., prompt chaining, reflection) achieve substantially better empirical performance on grounding and reasoning tasks.",
+          "paper_indices": [
+            16,
+            22,
+            23
+          ]
+        },
+        {
+          "text": "There is a lack of comprehensive surveys or unified frameworks covering AI long-term memory and agent architectures, motivating these survey and taxonomy efforts.",
+          "paper_indices": [
+            4,
+            16,
+            23
+          ]
+        }
+      ],
+      "limitations": [
+        "Rapid pace of AI development means surveys risk becoming outdated quickly after publication.",
+        "Most agent evaluations are conducted in isolated or simulated environments, limiting generalizability to real-world settings.",
+        "Human-inspired analogies for AI memory may not fully capture the technical nuances of machine learning systems.",
+        "Lack of standardized benchmarks makes cross-study comparison of agent architectures difficult.",
+        "Coverage of proprietary or closed-source systems is inherently limited, potentially skewing the landscape presented.",
+        "Autonomous agents still fall short of human-level decision-making and generalization in complex, open-ended tasks."
+      ],
+      "trend": "increasing",
+      "contradictions": [
+        "Papers differ in how they scope 'memory': Paper 1 focuses narrowly on long-term memory from a human-inspired lens, while Papers 2, 3, and 5 treat memory as one of several interacting agent components, leading to differing taxonomic boundaries.",
+        "Papers 3 and 4 (2025) emphasize architectural engineering and implementation patterns, while Papers 2 and 5 (2023–2024) prioritize conceptual frameworks and empirical surveys — reflecting a possible shift in community focus from theory to practice, though the two approaches are not always reconciled.",
+        "The degree to which human cognitive architectures should guide AI agent design is implicitly contested: Paper 1 strongly advocates human-inspired perspectives, while Papers 3 and 4 take a more engineering-centric view without necessarily grounding design choices in cognitive science."
+      ]
+    },
+    {
+      "cluster_label": "Personalization & Long-Term User Interaction",
+      "methodologies": [
+        "Benchmarking frameworks for long-term memory evaluation (CloneMem)",
+        "Retrieval-Augmented Generation (RAG) for context-aware LLM responses",
+        "Persistent memory storage combined with dynamic user profile construction",
+        "Memory sharing across multiple LLM-based agents",
+        "Experience-driven memory with look-ahead action simulation for web navigation agents",
+        "Natural language prompt-based agent task execution without explicit retraining or fine-tuning"
+      ],
+      "findings": [
+        {
+          "text": "Persistent or long-term memory is essential for enabling personalized, context-aware interactions in LLM-based agents, going beyond simple conversational history.",
+          "paper_indices": [
+            7,
+            12,
+            19
+          ]
+        },
+        {
+          "text": "Existing memory benchmarks and retrieval mechanisms (e.g., RAG) are insufficient for capturing the full richness of user-specific context, including emotions, opinions, and experiences over time.",
+          "paper_indices": [
+            7,
+            12
+          ]
+        },
+        {
+          "text": "Memory sharing across agents improves task performance by broadening the diversity and comprehensiveness of examples available to LLM-based agents, reducing reliance on fine-tuning.",
+          "paper_indices": [
+            17
+          ]
+        },
+        {
+          "text": "Experience-driven memory combined with look-ahead action simulation enables LLM web agents to adapt to unseen environments and complete long-horizon tasks more efficiently without environment-specific fine-tuning.",
+          "paper_indices": [
+            19
+          ]
+        },
+        {
+          "text": "User profiles, when combined with persistent memory, provide a mechanism to deliver truly personalized long-term interactions in LLM agents.",
+          "paper_indices": [
+            12
+          ]
+        },
+        {
+          "text": "AI Clones require memory systems that model not just factual history but also subjective human attributes such as emotions and opinions, demanding new benchmarking approaches (e.g., CloneMem).",
+          "paper_indices": [
+            7
+          ]
+        }
+      ],
+      "limitations": [
+        "Existing memory benchmarks rely on temporally fragmented conversational histories, which are insufficient for modeling rich human experiences (Paper 1).",
+        "RAG-based approaches lack mechanisms to integrate contextual information with user-specific knowledge for true personalization (Paper 2).",
+        "LLM agents are constrained by the comprehensiveness and diversity of provided examples, leading to outputs that diverge from expected results (Paper 3).",
+        "LLM web agents struggle with long-horizon navigation on new websites without fine-tuning on environment-specific data (Paper 4).",
+        "Memory sharing may introduce noise or irrelevant experiences from other agents, potentially degrading performance in highly specialized tasks (Paper 3)."
+      ],
+      "trend": "increasing",
+      "contradictions": [
+        "Paper 3 advocates for memory sharing across agents as a key mechanism to improve performance, implying collective memory is beneficial; however, Papers 1 and 2 emphasize highly individualized, user-specific memory as the critical requirement — suggesting a tension between collective/shared memory and personalized/private memory paradigms.",
+        "Paper 4 argues that experience-driven memory alone (without fine-tuning) is sufficient for adapting to new environments, while Paper 3 implicitly acknowledges that the diversity of examples (i.e., memory breadth) remains a bottleneck even with shared memory — reflecting differing views on how much memory design alone can compensate for lack of training."
+      ]
+    },
+    {
+      "cluster_label": "Generative & Embodied Agents with Memory",
+      "methodologies": [
+        "Large Language Model (LLM)-based agent architecture with memory stream, retrieval, reflection, and planning modules (Paper 1)",
+        "Sandbox simulation environment for multi-agent interaction and behavioral evaluation (Paper 1)",
+        "3D maze environments for benchmarking long-term memory in first-person, partially-observed settings (Paper 2)",
+        "Structured evaluation tasks targeting object localization and spatial map recall (Paper 2)",
+        "Human evaluation and behavioral interviews to assess believability of agent actions (Paper 1)"
+      ],
+      "findings": [
+        {
+          "text": "Generative agents powered by large language models (LLMs) can simulate believable human behavior, including daily routines, social interactions, and planning, by combining memory retrieval, reflection, and action generation.",
+          "paper_indices": [
+            2
+          ]
+        },
+        {
+          "text": "Intelligent agents operating in partially-observed 3D environments require robust long-term memory mechanisms to track object positions and spatial layouts (e.g., room connectivity) that go out of view.",
+          "paper_indices": [
+            20
+          ]
+        },
+        {
+          "text": "Memory architecture is a critical component for agent intelligence: Paper 1 introduces a memory stream with retrieval based on recency, importance, and relevance, while Paper 2 evaluates memory through structured 3D maze navigation benchmarks.",
+          "paper_indices": [
+            2,
+            20
+          ]
+        },
+        {
+          "text": "Agents that leverage stored memories to reflect and plan exhibit more coherent and contextually appropriate long-term behavior compared to agents without such mechanisms.",
+          "paper_indices": [
+            2
+          ]
+        },
+        {
+          "text": "Existing agent architectures and benchmarks reveal significant gaps in long-term memory retention and utilization in partially-observable environments, motivating new evaluation frameworks.",
+          "paper_indices": [
+            20
+          ]
+        }
+      ],
+      "limitations": [
+        "Generative agents are computationally expensive due to repeated LLM inference, limiting scalability to large populations (Paper 1)",
+        "Agent behavior may reflect biases present in the underlying LLM training data, reducing authenticity (Paper 1)",
+        "The sandbox environment is relatively constrained and may not generalize to open-ended real-world scenarios (Paper 1)",
+        "The 3D maze benchmark (Paper 2) is limited in scope and may not capture the full complexity of memory demands in real-world or open-ended environments",
+        "Evaluation in partially-observed environments is inherently difficult to standardize, and maze-based tasks may not transfer to other agent domains (Paper 2)"
+      ],
+      "trend": "increasing",
+      "contradictions": [
+        "Paper 1 focuses on high-level, language-driven memory and social reasoning in a 2D sandbox, while Paper 2 focuses on low-level spatial and object memory in 3D navigation — the two papers implicitly differ on what 'memory' means for agents (semantic/episodic vs. spatial/perceptual), suggesting no unified definition of agent memory exists across the cluster.",
+        "Paper 1 treats believability and social coherence as the primary success metric, whereas Paper 2 uses objective task-completion metrics in structured mazes — these differing evaluation philosophies may yield incompatible conclusions about what constitutes a 'good' memory system."
+      ]
+    },
+    {
+      "cluster_label": "Biomedical & Domain-Specific LLM Agents",
+      "methodologies": [
+        "Comprehensive literature review and synthesis of existing LLM agent architectures",
+        "Analysis of reasoning and planning modules (e.g., chain-of-thought, ReAct, tool-augmented generation)",
+        "Survey of memory mechanisms (short-term, long-term, external retrieval)",
+        "Evaluation framework analysis across biomedical benchmarks and clinical tasks",
+        "Taxonomy of agent types: autonomous, collaborative, and hybrid agents"
+      ],
+      "findings": [
+        {
+          "text": "LLM-based agents integrate reasoning, planning, memory, and tool use to operate autonomously or collaboratively in complex biomedical and clinical settings, going beyond static language models.",
+          "paper_indices": [
+            25
+          ]
+        },
+        {
+          "text": "These agents are emerging as transformative tools across both biomedical research and clinical applications, with broad applicability spanning diagnostics, drug discovery, and healthcare workflows.",
+          "paper_indices": [
+            25
+          ]
+        },
+        {
+          "text": "Comprehensive evaluation frameworks are needed to assess LLM agent performance in biomedical domains, as standard NLP benchmarks are insufficient for capturing clinical complexity.",
+          "paper_indices": [
+            25
+          ]
+        },
+        {
+          "text": "Key challenges include safety, reliability, hallucination, interpretability, and ethical concerns specific to high-stakes healthcare environments.",
+          "paper_indices": [
+            25
+          ]
+        },
+        {
+          "text": "Future directions include multi-agent collaboration, improved domain-specific grounding, and tighter integration with clinical knowledge bases and tools.",
+          "paper_indices": [
+            25
+          ]
+        }
+      ],
+      "limitations": [
+        "Only one paper is present in this cluster, limiting cross-paper synthesis and contradiction detection",
+        "As a review paper, findings are dependent on the scope and selection criteria of surveyed literature",
+        "Rapidly evolving field means some covered methods may already be outdated at time of publication",
+        "Evaluation metrics for biomedical LLM agents remain inconsistent and non-standardized across studies",
+        "Ethical, regulatory, and safety frameworks for clinical deployment are still nascent and underexplored"
+      ],
+      "trend": "increasing",
+      "contradictions": [
+        "No contradictions can be identified within a single-paper cluster; cross-paper tensions (e.g., over agent autonomy vs. safety trade-offs) cannot be assessed without additional papers in the cluster"
+      ]
+    }
+  ],
+  "refined_queries": [
+    "long-term memory mechanisms in autonomous AI agents",
+    "persistent memory architectures for large language model agents",
+    "episodic and semantic memory retrieval in conversational AI systems",
+    "external memory augmentation for neural network agents",
+    "continual learning and knowledge retention in reinforcement learning agents"
+  ]
+}
