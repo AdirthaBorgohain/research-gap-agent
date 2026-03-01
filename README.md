@@ -98,6 +98,7 @@ Citations use `filtered_papers`: `[k]` = k-th paper (1-based). **gap_finder** ou
 - **Tests**: Unit tests for dedup, normalization, citation helpers, state reducers; integration tests with mocked LLM and API responses.
 - **BibTeX / reference export**: Export the reference list as BibTeX or another standard format.
 - **Per-node model configuration**: Allow configuring different LLMs for different nodes/tasks (e.g. a cheaper/faster model for query planning, a stronger one for gap finding and report writing) instead of using the same model for all nodes.
+- **More agentic loops and agents**: Introduce additional specialized agents—e.g. a **paper relevancy checking agent** that refines or re-scores relevance in a dedicated subgraph, or a **hypothesis reviewer agent** that verifies whether suggested hypotheses are actually novel (against the analyzed corpus or external sources) before they appear in the final report—composed into the main flow.
 
 ---
 
